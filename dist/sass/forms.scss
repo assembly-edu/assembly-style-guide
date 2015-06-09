@@ -1,0 +1,159 @@
+// Forms
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+textarea,
+select {
+  height: 42px;
+  padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+  background-color: #fff;
+  border: 1px solid darken($light-grey, 5%);
+  border-bottom: 2px solid darken($light-grey, 5%);
+  border-radius: $global-radius;
+  box-shadow: none;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+textarea {
+  width: 100%;
+}
+select {
+  max-width: 100%;
+  display: block;
+}
+
+// Removes awkward default styles on some inputs for iOS
+input {
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input {
+  &[type="email"]:focus,
+  &[type="number"]:focus,
+  &[type="search"]:focus,
+  &[type="text"]:focus,
+  &[type="tel"]:focus,
+  &[type="url"]:focus,
+  &[type="password"]:focus {
+    border: 1px solid $primary-color;
+    outline: 0;
+    box-shadow: inset 0px 0px 0px 1px rgba($primary-color,1);
+  }
+}
+
+input {
+  &[type="email"]:disabled,
+  &[type="number"]:disabled,
+  &[type="search"]:disabled,
+  &[type="text"]:disabled,
+  &[type="tel"]:disabled,
+  &[type="url"]:disabled,
+  &[type="password"]:disabled {
+    color: $grey;
+    background-color: #fff;
+  }
+}
+
+input {
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    height: 42px;
+    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    background-color: #fff;
+    border: 1px solid darken($light-grey, 5%);
+    border-bottom: 2px solid darken($light-grey, 5%);
+    border-radius: $global-radius;
+    margin: 0;
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+textarea:focus,
+select:focus {
+  border: 1px solid $primary-color;
+  outline: 0;
+  box-shadow: inset 0px 0px 0px 1px rgba($primary-color,1);
+}
+
+label,
+legend {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+.input-group {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hint-text {
+  color: $grey;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.form-error {
+  color: $secondary-color-dark;
+  input {
+    border: 1px solid $secondary-color-dark !important;
+    box-shadow: inset 0px 0px 0px 1px $secondary-color-dark !important;
+  }
+  .hint-text { color: $secondary-color-dark; }
+}
+
+.radio-buttons, .checkboxes {
+  label {
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-weight: 400;
+    border: 1px solid darken($light-grey, 5%);
+    border-bottom: 2px solid darken($light-grey, 5%);
+  }
+}

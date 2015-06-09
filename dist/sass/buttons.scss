@@ -1,0 +1,108 @@
+// Buttons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button {
+  display: inline-block;
+  height: 42px;
+  padding: 0 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: $primary-color;
+  border-radius: $global-radius;
+  border: none;
+  border: 1px solid $primary-color-dark;
+  border-bottom: 2px solid $primary-color-dark;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input {
+  &[type="submit"],
+  &[type="reset"],
+  &[type="button"] {
+    display: inline-block;
+    height: 42px;
+    padding: 0 25px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: $primary-color;
+    border-radius: $global-radius;
+    border: none;
+    border: 1px solid $primary-color-dark;
+    border-bottom: 2px solid $primary-color-dark;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+}
+
+.button:hover,
+button:hover {
+  background-color: $primary-color-dark;
+  outline: 0;
+}
+
+input {
+  &[type="submit"]:hover,
+  &[type="reset"]:hover,
+  &[type="button"]:hover {
+    background-color: $primary-color-dark;
+  outline: 0;
+  }
+}
+
+.button:focus,
+button:focus {
+  background-color: $primary-color-dark;
+  outline: 0;
+}
+
+input {
+  &[type="submit"]:focus,
+  &[type="reset"]:focus,
+  &[type="button"]:focus {
+    background-color: $primary-color-dark;
+  outline: 0;
+  }
+}
+
+.button.btn-secondary, button.btn-secondary, input.btn-secondary {
+  background-color: $secondary-color;
+  border: 1px solid darken($secondary-color, 10%);
+  border-bottom: 2px solid darken($secondary-color, 10%);
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+.button.btn-success, button.btn-success, input.btn-success {
+  background-color: $success-color;
+  border: 1px solid darken($success-color, 10%);
+  border-bottom: 2px solid darken($success-color, 10%);
+  &:hover {
+    background-color: darken($success-color, 10%);
+  }
+}
+
+.button.btn-cancel, button.btn-cancel, input.btn-cancel {
+  background-color: $dark-grey;
+  border: 1px solid darken($dark-grey, 10%);
+  border-bottom: 2px solid darken($dark-grey, 10%);
+  &:hover {
+    background-color: darken($dark-grey, 10%);
+  }
+}
