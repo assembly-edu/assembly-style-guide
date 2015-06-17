@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $('#tabs').assemblyTabs();
+
   $('#modal').assemblyModal();
+  $('#modal2').assemblyModal();
 
   $('#modalButton').click(function(){
     $('#modal').assemblyModal('show');
@@ -9,10 +11,10 @@ $(document).ready(function() {
     $('#modal2').assemblyModal('show');
   });
 
-  $('#modal').click(function(){
+  $('#modal .assembly-modal-close').click(function(){
     $('#modal').assemblyModal('hide');
   });
-  $('#modal2').click(function(){
+  $('#modal2 .assembly-modal-close').click(function(){
     $('#modal2').assemblyModal('hide');
   });
 });
