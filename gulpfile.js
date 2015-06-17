@@ -13,7 +13,7 @@ var uglify      = require('gulp-uglify');
 var gutil       = require('gulp-util');
 
 gulp.task('sass', function () {
-  gulp.src('./sass/main.scss')
+  gulp.src('./lib/assets/stylesheets/assembly.scss')
     .pipe(sass({ style: 'compressed' }).on('error', sass.logError))
     .pipe(concat('assembly.min.css'))
     .pipe(minifyCSS({compatibility: 'ie8'}))
@@ -22,7 +22,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function() {
-  gulp.src('./js/*.js')
+  gulp.src('./lib/assets/javascripts/assembly/*.js')
     .pipe(concat('assembly.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))

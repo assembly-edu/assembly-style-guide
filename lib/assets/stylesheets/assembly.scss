@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 
-@import "normalize";
-@import "variables";
-@import "grid";
-@import "helper";
-@import "typography";
-@import "forms";
-@import "buttons";
-@import "components";
+@import "assembly/normalize";
+@import "assembly/variables";
+@import "assembly/grid";
+@import "assembly/helper";
+@import "assembly/typography";
+@import "assembly/forms";
+@import "assembly/buttons";
+@import "assembly/components";
 
 
 html {
