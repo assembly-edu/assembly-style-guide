@@ -3,22 +3,21 @@
 
 textarea,
 select {
-  height: 42px;
+  height: 32px;
   padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
   border: 1px solid darken($light-grey, 5%);
-  border-bottom: 2px solid darken($light-grey, 5%);
+  box-shadow: 0px 1px 0px darken($light-grey, 5%);
   border-radius: $global-radius;
-  box-shadow: none;
   box-sizing: border-box;
-  margin-top: 5px;
+  margin: 5px 0;
+  width: 100%;
 }
 textarea {
   width: 100%;
 }
 select {
   max-width: 100%;
-  display: block;
 }
 
 // Removes awkward default styles on some inputs for iOS
@@ -52,6 +51,7 @@ input {
   &[type="text"]:focus,
   &[type="tel"]:focus,
   &[type="url"]:focus,
+  &[type="color"]:focus,
   &[type="password"]:focus {
     border: 1px solid $primary-color;
     outline: 0;
@@ -66,10 +66,18 @@ input {
   &[type="text"]:disabled,
   &[type="tel"]:disabled,
   &[type="url"]:disabled,
+  &[type="color"]:disabled,
   &[type="password"]:disabled {
     color: $grey;
     background-color: #fff;
   }
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: none;
 }
 
 input {
@@ -79,15 +87,15 @@ input {
   &[type="text"],
   &[type="tel"],
   &[type="url"],
+  &[type="color"],
   &[type="password"] {
-    height: 42px;
+    height: 32px;
     padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
     border: 1px solid darken($light-grey, 5%);
-    border-bottom: 2px solid darken($light-grey, 5%);
+    box-shadow: 0px 1px 0px darken($light-grey, 5%);
     border-radius: $global-radius;
-    margin: 0;
-    margin-top: 5px;
+    margin: 5px 0;
     width: 100%;
   }
 }
@@ -102,7 +110,8 @@ select:focus {
 label,
 legend {
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  display: block;
 }
 
 fieldset {
@@ -147,10 +156,10 @@ label > .label-body {
 .radio-buttons, .checkboxes {
   label {
     display: inline-block;
-    padding: 12px 15px;
+    padding: 10px 15px;
     background-color: #fff;
     border-radius: 3px;
-    margin-top: 5px;
+    margin: 5px 0;
     margin-right: 10px;
     font-weight: 400;
     border: 1px solid darken($light-grey, 5%);

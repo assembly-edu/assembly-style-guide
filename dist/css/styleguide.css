@@ -1,0 +1,19 @@
+img {
+  max-width: 100%;
+}
+
+section { padding: 80px 0; }
+
+.full-height { min-height: 100%; }
+
+.app-icon {
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+.swatch {
+  height: 200px;
+  margin-bottom: 30px;
+}
+.rating {
+  color: $primary-color;
+}

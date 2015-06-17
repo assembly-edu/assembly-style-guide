@@ -1,0 +1,21 @@
+// Helper classes
+
+.text-white { color: #fff; }
+.text-primary { color: $primary-color; }
+.text-secondary { color: $secondary-color; }
+.text-intro {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.bg-primary { background: $primary-color; }
+.bg-primary-light { background: $primary-color-light; }
+.bg-primary-dark { background: $primary-color-dark; }
+.bg-secondary { background: $secondary-color; }
+.bg-secondary-light { background: $secondary-color-light; }
+.bg-secondary-dark { background: $secondary-color-dark; }
+.bg-warning { background: $warning-color; }
+.bg-success { background: $success-color; }
+.bg-dark-grey { background: $dark-grey; }
+

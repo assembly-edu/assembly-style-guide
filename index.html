@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/assembly.min.css">
+    <link rel="stylesheet" href="dist/css/assembly.min.css">
+    <link rel="stylesheet" href="dist/css/styleguide.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="dist/js/assembly.min.js"></script>
+    <script src="dist/js/main.js"></script>
 
-    <script src="//use.typekit.net/jtg0evw.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
 
@@ -270,6 +272,50 @@
               <br/>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12">
+
+              <h2 class="header">Tabs</h2>
+              <div id="tabs" class="asmbly-tabs">
+                <nav>
+                  <ul>
+                    <li><a href="#section-1">Shop</a></li>
+                    <li><a href="#section-2">Drinks</a></li>
+                    <li><a href="#section-3">Food</a></li>
+                    <li><a href="#section-4">Lab</a></li>
+                    <li><a href="#section-5">Order</a></li>
+                  </ul>
+                </nav>
+                <div class="tab-wrapper">
+                  <div class="tab-content" id="section-1">
+                    <h3>Sushi Gumbo Beetroot</h3>
+                    <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+                  </div>
+                  <div class="tab-content" id="section-2">
+                    <h3>Asparagus Cucumber Cake</h3>
+                    <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+                  </div>
+                  <div class="tab-content" id="section-3">
+                    <h3>Noodle Curry</h3>
+                    <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+                  </div>
+                  <div class="tab-content" id="section-4">
+                    <h3>Tomato Cucumber Curd</h3>
+                    <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+                  </div>
+                  <div class="tab-content" id="section-5">
+                    <h3>Radish Tomato</h3>
+                    <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="header">Modals</h2>
+              <button class="button" id="modalButton">Open Modal</button>
+              <button class="button" id="modalButton2">Open Modal</button>
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -321,5 +367,30 @@
         </div>
       </div>
     </section>
+
+    <div id="modal" class="assembly-modal">
+      <div class="assembly-modal-wrapper">
+        <div class="assembly-modal-header">
+          This is a modal
+          <div class="assembly-modal-close">
+            <i class="icon ion-close"></i>
+          </div>
+        </div>
+        <div class="assembly-modal-content">test</div>
+      </div>
+    </div>
+
+    <div id="modal2" class="assembly-modal">
+      <div class="assembly-modal-wrapper">
+        <div class="assembly-modal-header">
+          This is a modal
+          <div class="assembly-modal-close">
+            <i class="icon ion-close"></i>
+          </div>
+        </div>
+        <div class="assembly-modal-content">test 2</div>
+      </div>
+    </div>
+
   </body>
 </html>

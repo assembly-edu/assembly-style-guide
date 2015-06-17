@@ -8,32 +8,44 @@ var rename      = require('gulp-rename');
 var http        = require('http');
 var connect     = require('gulp-connect');
 var watch       = require('gulp-watch');
+var coffee      = require('gulp-coffee');
+var uglify      = require('gulp-uglify');
+var gutil       = require('gulp-util');
 
 gulp.task('sass', function () {
-  gulp.src('./dist/sass/main.scss')
+  gulp.src('./sass/main.scss')
     .pipe(sass({ style: 'compressed' }).on('error', sass.logError))
-    .pipe(concat('/assembly.min.css'))
+    .pipe(concat('assembly.min.css'))
     .pipe(minifyCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./dist/css'))
+    .pipe(connect.reload());
+});
+
+gulp.task('js', function() {
+  gulp.src('./js/*.js')
+    .pipe(concat('assembly.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/js'))
     .pipe(connect.reload());
 });
 
 gulp.task('server', function(done) {
   connect.server({
     livereload: true,
-    root: ['./dist',]
+    root: ['./',]
   });
 });
 
 gulp.task('livereload', function() {
-  gulp.src(['./dist/index.html'])
-    .pipe(watch('./dist/index.html'))
+  gulp.src(['./index.html'])
+    .pipe(watch('./index.html'))
     .pipe(connect.reload());
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./dist/sass/**/*.scss', ['sass']);
-  gulp.watch('./dist/**/*.html', ['livereload']);
+  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./js/**/*.js', ['js']);
+  gulp.watch('./**/*.html', ['livereload']);
 })
 
-gulp.task('default', ['sass', 'server', 'watch']);
+gulp.task('default', ['sass', 'js', 'server', 'watch']);
