@@ -17,3 +17,7 @@ section { padding: 80px 0; }
 .rating {
   color: $primary-color;
 }
+
+.tab-content {
+  padding: 20px 0;
+}

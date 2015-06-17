@@ -83,18 +83,22 @@
     }
   }
 
-  &.full-height {
-    .assembly-modal-wrapper {
-      min-height: 100%;
-    }
+  &.full-height .assembly-modal-wrapper {
+    min-height: 100%;
+  }
+  &.large-modal .assembly-modal-wrapper {
+    max-width: 1140px;
+  }
+  &.small-modal .assembly-modal-wrapper {
+    max-width: 360px;
   }
 
   .assembly-modal-wrapper {
     background: #fcfcfc;
     margin: 0 auto;
     display: inline-block;
-    max-width: 1140px;
-    min-width: 360px;
+    max-width: 720px;
+    min-width: 300px;
     border-radius: 3px;
     overflow: hidden;
     text-align: left;

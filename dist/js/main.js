@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   $('#modal').assemblyModal();
   $('#modal2').assemblyModal();
+  $('#modal3').assemblyModal();
 
   $('#modalButton').click(function(){
     $('#modal').assemblyModal('show');
@@ -10,11 +11,7 @@ $(document).ready(function() {
   $('#modalButton2').click(function(){
     $('#modal2').assemblyModal('show');
   });
-
-  $('#modal .assembly-modal-close').click(function(){
-    $('#modal').assemblyModal('hide');
-  });
-  $('#modal2 .assembly-modal-close').click(function(){
-    $('#modal2').assemblyModal('hide');
+  $('#modalButton3').click(function(){
+    $('#modal3').assemblyModal('show');
   });
 });
