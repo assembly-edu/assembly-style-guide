@@ -1,16 +1,18 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.button,
-button {
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
   display: inline-block;
-  height: 42px;
-  padding: 0 20px;
+  padding: 10px 15px;
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 1.4rem;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -22,67 +24,37 @@ button {
   border-bottom: 2px solid $primary-color-dark;
   cursor: pointer;
   box-sizing: border-box;
-}
-
-input {
-  &[type="submit"],
-  &[type="reset"],
-  &[type="button"] {
-    display: inline-block;
-    height: 42px;
-    padding: 0 25px;
-    color: #fff;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: $primary-color;
-    border-radius: $global-radius;
-    border: none;
-    border: 1px solid $primary-color-dark;
-    border-bottom: 2px solid $primary-color-dark;
-    cursor: pointer;
-    box-sizing: border-box;
+  &.btn-small {
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  &.btn-large {
+    padding: 15px 25px;
   }
 }
 
-.button:hover,
-button:hover {
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
   background-color: $primary-color-dark;
   color: #fff;
   outline: 0;
   text-decoration: none;
 }
 
-input {
-  &[type="submit"]:hover,
-  &[type="reset"]:hover,
-  &[type="button"]:hover {
-    background-color: $primary-color-dark;
-  outline: 0;
-  }
-}
-
-.button:focus,
-button:focus {
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
   background-color: $primary-color-dark;
   outline: 0;
 }
 
-input {
-  &[type="submit"]:focus,
-  &[type="reset"]:focus,
-  &[type="button"]:focus {
-    background-color: $primary-color-dark;
-  outline: 0;
-  }
-}
-
-.button.btn-secondary, button.btn-secondary, input.btn-secondary {
+.btn.btn-secondary, button.btn-secondary, input.btn-secondary {
   background-color: $secondary-color;
   border: 1px solid darken($secondary-color, 10%);
   border-bottom: 2px solid darken($secondary-color, 10%);
@@ -92,7 +64,7 @@ input {
   }
 }
 
-.button.btn-success, button.btn-success, input.btn-success {
+.btn.btn-success, button.btn-success, input.btn-success {
   background-color: $success-color;
   border: 1px solid darken($success-color, 10%);
   border-bottom: 2px solid darken($success-color, 10%);
@@ -102,7 +74,17 @@ input {
   }
 }
 
-.button.btn-cancel, button.btn-cancel, input.btn-cancel {
+.btn.btn-danger, button.btn-danger, input.btn-danger {
+  background-color: $danger-color;
+  border: 1px solid darken($danger-color, 10%);
+  border-bottom: 2px solid darken($danger-color, 10%);
+  &:hover {
+    background-color: darken($danger-color, 10%);
+    color: #fff;
+  }
+}
+
+.btn.btn-cancel, button.btn-cancel, input.btn-cancel {
   background-color: $dark-grey;
   border: 1px solid darken($dark-grey, 10%);
   border-bottom: 2px solid darken($dark-grey, 10%);
