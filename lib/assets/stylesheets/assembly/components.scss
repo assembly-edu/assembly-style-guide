@@ -56,7 +56,7 @@
 .assembly-modal {
   background-color: rgba(darken($dark-grey, 30%),0.85);
   z-index: 9999;
-  padding: 30px;
+  padding: 60px 30px;
   height: 100%;
   overflow: auto;
   text-align: center;
@@ -223,7 +223,6 @@
   height: 60px;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
   border-radius: 3px;
-  // overflow: hidden;
   ul {
     margin: 0;
     padding: 0;
@@ -293,6 +292,15 @@
   }
   .assembly-navbar-left {
     float: left;
+  }
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    z-index: 9999;
   }
 }
 
