@@ -30,7 +30,6 @@ blockquote {
 a {
   color: $secondary-color;
   text-decoration: none;
-  font-weight: 600;
   &:hover {
     color: darken($secondary-color, 5%);
     text-decoration: underline;
