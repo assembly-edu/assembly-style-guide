@@ -51,7 +51,31 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   background-color: $primary-color-dark;
+  color: #fff;
   outline: 0;
+  text-decoration: none;
+}
+
+.btn:visited,
+button:visited,
+input[type="submit"]:visited,
+input[type="reset"]:visited,
+input[type="button"]:visited {
+  background-color: $primary-color-dark;
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
+}
+
+.btn:link,
+button:link,
+input[type="submit"]:link,
+input[type="reset"]:link,
+input[type="button"]:link {
+  background-color: $primary-color-dark;
+  color: #fff;
+  outline: 0;
+  text-decoration: none;
 }
 
 .btn.btn-secondary, button.btn-secondary, input.btn-secondary {

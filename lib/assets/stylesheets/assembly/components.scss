@@ -223,29 +223,40 @@
   height: 60px;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
   border-radius: 3px;
-  overflow: hidden;
+  // overflow: hidden;
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     font-size: 0;
     li {
-      display: inline-block;
+      float: left;
       font-size: 1.4rem;
       margin: 0;
       position: relative;
+      &:hover > ul {
+        display:block
+      }
+      &:hover, &:focus, &:visited {
+        background: #f8f8f8;
+      }
     }
     ul {
       display: none;
       position: absolute;
+      z-index: 9999;
       top: 100%;
       left: 0;
-      background: #fff;
+      background: #f8f8f8;
       padding: 0;
       margin: 0;
+      box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
       li {
         display: block;
-        width: 200px
+        width: 200px;
+        &:hover, &:focus, &:visited {
+          background: #eee;
+        }
       }
       ul {
         top: 0;
@@ -259,14 +270,17 @@
       display: block;
       line-height: 60px;
       color: $font-color;
-      &:hover {
-        background: #f3f3f3;
+      &:hover, &:focus, &:visited {
         text-decoration: none;
       }
     }
     .icon {
       margin-right: 10px;
       font-size: 1.6rem;
+    }
+    .dropdown .icon {
+      margin: 0 0 0 10px;
+      font-size: 1.4rem;
     }
   }
   .assembly-navbar-brand {
@@ -282,16 +296,4 @@
   }
 }
 
-
-
-#primary_nav_wrap ul ul ul
-{
-  top:0;
-  left:100%
-}
-
-#primary_nav_wrap ul li:hover > ul
-{
-  display:block
-}
 
