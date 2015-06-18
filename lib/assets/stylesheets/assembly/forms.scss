@@ -1,6 +1,10 @@
 // Forms
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+form {
+  display: inline;
+}
+
 textarea,
 select {
   height: 38px;
