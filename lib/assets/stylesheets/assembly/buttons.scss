@@ -24,6 +24,7 @@ input[type="button"] {
   border-bottom: 2px solid $primary-color-dark;
   cursor: pointer;
   box-sizing: border-box;
+  margin: 5px 0;
   &.btn-small {
     padding: 8px 10px;
     font-size: 1.2rem;
@@ -33,7 +34,7 @@ input[type="button"] {
     padding: 15px 25px;
   }
   i {
-    padding-right: 5px;
+    padding-right: 3px;
   }
 }
 
