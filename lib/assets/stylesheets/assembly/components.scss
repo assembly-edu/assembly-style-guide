@@ -304,4 +304,17 @@
   }
 }
 
+// Badges //
+
+.badge {
+  background: $dark-grey;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 5px;
+  letter-spacing: 0.05em;
+}
+
 

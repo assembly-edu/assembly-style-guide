@@ -65,7 +65,7 @@ button:visited,
 input[type="submit"]:visited,
 input[type="reset"]:visited,
 input[type="button"]:visited {
-  background-color: $primary-color-dark;
+  background-color: $primary-color;
   color: #fff;
   outline: 0;
   text-decoration: none;
@@ -76,7 +76,7 @@ button:link,
 input[type="submit"]:link,
 input[type="reset"]:link,
 input[type="button"]:link {
-  background-color: $primary-color-dark;
+  background-color: $primary-color;
   color: #fff;
   outline: 0;
   text-decoration: none;
