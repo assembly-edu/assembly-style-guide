@@ -14,7 +14,7 @@
 // ALERT //
 
 .alert {
-  padding: 2rem 2rem;
+  padding: 20px;
   display: inline-block;
   border-radius: $global-radius;
   color: #fff;
@@ -24,8 +24,8 @@
     margin-right: 3px;
     font-size: 1.8rem;
     position: absolute;
-    top: 2.2rem;
-    left: 1.8rem;
+    top: 25px;
+    left: 20px;
   }
   .alert-content {
     margin-left: 3rem;
@@ -335,13 +335,14 @@
 
 .badge {
   background: $dark-grey;
-  padding: 2px 5px;
+  padding: 3px 5px;
   border-radius: 5px;
   color: #fff;
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 5px;
   letter-spacing: 0.05em;
+  line-height: 1.2rem;
 }
 
 
