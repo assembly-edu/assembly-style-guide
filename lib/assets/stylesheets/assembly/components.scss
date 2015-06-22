@@ -49,6 +49,11 @@
     border: 1px solid darken($success-color, 10%);
     border-bottom: 2px solid darken($success-color, 10%);
   }
+  &.info {
+    background: $dark-grey;
+    border: 1px solid darken($dark-grey, 10%);
+    border-bottom: 2px solid darken($dark-grey, 10%);
+  }
 }
 
 // MODAL //
