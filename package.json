@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp sass:watch"
+    "dev": "gulp sass:watch",
+    "start": "gulp server"
   },
   "author": "Ashley St Pier",
   "license": "ISC",
