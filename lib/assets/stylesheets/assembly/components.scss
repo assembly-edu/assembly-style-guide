@@ -9,6 +9,21 @@
   &.center {
     text-align: center;
   }
+  &.grey-border {
+    border-top: 10px solid $dark-grey;
+  }
+  &.primary-border {
+    border-top: 10px solid $primary-color;
+  }
+  &.secondary-border {
+    border-top: 10px solid $secondary-color;
+  }
+  &.warning-border {
+    border-top: 10px solid $warning-color;
+  }
+  &.success-border {
+    border-top: 10px solid $success-color;
+  }
 }
 
 // ALERT //
