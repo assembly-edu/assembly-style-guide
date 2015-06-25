@@ -70,17 +70,6 @@ input[type="button"]:visited {
   text-decoration: none;
 }
 
-.btn:link,
-button:link,
-input[type="submit"]:link,
-input[type="reset"]:link,
-input[type="button"]:link {
-  background-color: $primary-color;
-  color: #fff;
-  outline: 0;
-  text-decoration: none;
-}
-
 .btn.btn-secondary, button.btn-secondary, input.btn-secondary {
   background-color: $secondary-color;
   border: 1px solid darken($secondary-color, 10%);
@@ -112,11 +101,11 @@ input[type="button"]:link {
 }
 
 .btn.btn-cancel, button.btn-cancel, input.btn-cancel {
-  background-color: $dark-grey;
-  border: 1px solid darken($dark-grey, 10%);
-  border-bottom: 2px solid darken($dark-grey, 10%);
+  background-color: $slate-grey;
+  border: 1px solid darken($slate-grey, 10%);
+  border-bottom: 2px solid darken($slate-grey, 10%);
   &:hover {
-    background-color: darken($dark-grey, 10%);
+    background-color: darken($slate-grey, 10%);
     color: #fff;
   }
 }

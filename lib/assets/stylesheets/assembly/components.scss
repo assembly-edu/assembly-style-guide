@@ -10,7 +10,7 @@
     text-align: center;
   }
   &.grey-border {
-    border-top: 10px solid $dark-grey;
+    border-top: 10px solid $slate-grey;
   }
   &.primary-border {
     border-top: 10px solid $primary-color;
@@ -65,16 +65,16 @@
     border-bottom: 2px solid darken($success-color, 10%);
   }
   &.info {
-    background: $dark-grey;
-    border: 1px solid darken($dark-grey, 10%);
-    border-bottom: 2px solid darken($dark-grey, 10%);
+    background: $slate-grey;
+    border: 1px solid darken($slate-grey, 10%);
+    border-bottom: 2px solid darken($slate-grey, 10%);
   }
 }
 
 // MODAL //
 
 .assembly-modal {
-  background-color: rgba(darken($dark-grey, 30%),0.85);
+  background-color: rgba(darken($slate-grey, 30%),0.85);
   z-index: 9999;
   padding: 60px 30px;
   height: 100%;
@@ -217,7 +217,7 @@
       }
     }
     a {
-      color: $grey;
+      color: $font-color;
       display: block;
       line-height: 3.5;
       padding: 0 2em;
@@ -365,7 +365,7 @@
 // Badges //
 
 .badge {
-  background: $dark-grey;
+  background: $slate-grey;
   padding: 3px 5px;
   border-radius: 5px;
   color: #fff;
