@@ -34,6 +34,9 @@ a {
     color: darken($secondary-color, 5%);
     text-decoration: underline;
   }
+  &:focus {
+    outline: 0;
+  }
 }
 
 // Lists

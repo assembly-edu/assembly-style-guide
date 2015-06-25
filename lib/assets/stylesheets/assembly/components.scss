@@ -74,7 +74,7 @@
   -webkit-transition: opacity 200ms;
    -moz-transition: opacity 200ms;
      -o-transition: opacity 200ms;
-        transition: opacity 200ms;
+      transition: opacity 200ms;
 
   &.show {
     position: fixed;
@@ -84,7 +84,10 @@
     bottom: 0;
     opacity: 1;
     .assembly-modal-wrapper {
-      transform: translateY(0px);
+      -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+         transform: translateY(0px);
     }
   }
 
@@ -111,12 +114,15 @@
     position: relative;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+     -moz-transform: translateY(-100px);
+      -o-transform: translateY(-100px);
+       transform: translateY(-100px);
 
-    -webkit-transition: transform 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-     -moz-transition: transform 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-       -o-transition: transform 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-          transition: transform 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    -webkit-transition: all 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+     -moz-transition: all 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+       -o-transition: all 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+         transition: all 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
 
     .assembly-modal-header {
       padding: 15px 50px 15px 20px;
@@ -127,11 +133,16 @@
     .assembly-modal-content {
       padding: 20px;
     }
+    .assembly-modal-footer {
+      padding: 5px 20px;
+      border-top: 1px solid lighten($light-grey, 3%);
+      text-align: right;
+    }
   }
 
-  .assembly-modal-close {
+  .assembly-modal-close .close-icon {
     position: absolute;
-    top: 12px;
+    top: 20px;
     right: 20px;
     margin: 0;
     cursor: pointer;
@@ -313,6 +324,11 @@
     float: left;
     line-height: 60px;
     padding: 0 25px;
+    height: 100%;
+    img {
+      height: 100%;
+      padding: 10px 0;
+    }
   }
   .navbar-right {
     float: right;
