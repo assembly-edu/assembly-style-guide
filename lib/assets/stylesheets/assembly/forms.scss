@@ -160,7 +160,7 @@ label > .label-body {
 
 .form-error {
 
-  input {
+  input, select, textarea {
     border: 1px solid $danger-color !important;
     box-shadow: inset 0px 0px 0px 1px $danger-color!important;
     color: $danger-color;
