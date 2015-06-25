@@ -8,7 +8,7 @@ $secondary-color-light: lighten(#FF6B6B, 15%) !default;
 $secondary-color-dark: desaturate(darken(#FF6B6B, 20%), 30%) !default;
 
 $grey: #999 !default;
-$light-grey: #EAE7E7 !default;
+$light-grey: desaturate(darken(#F9F7F4, 10%), 18%) !default;
 $dark-grey: #879EAD !default;
 
 $font-color: #555 !default;
