@@ -365,15 +365,32 @@
 // Badges //
 
 .badge {
-  background: $slate-grey;
-  padding: 3px 5px;
+  background: slate-grey;
+  padding: 3px 5px 4px;
   border-radius: 5px;
   color: #fff;
   display: inline-block;
   font-size: 1.2rem;
+  font-weight: 300;
   margin: 0 5px;
   letter-spacing: 0.05em;
-  line-height: 1.2rem;
+  line-height: 1rem;
+  vertical-align: middle;
+  &.warning {
+    background: $warning-color;
+  }
+  &.success {
+    background: $success-color;
+  }
+  &.danger {
+    background: $danger-color;
+  }
+  &.primary {
+    background: $primary-color;
+  }
+  &.secondary {
+    background: $secondary-color;
+  }
 }
 
 
