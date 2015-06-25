@@ -7,7 +7,7 @@ $secondary-color: #FF6B6B !default;
 $secondary-color-light: lighten(#FF6B6B, 15%) !default;
 $secondary-color-dark: desaturate(darken(#FF6B6B, 20%), 30%) !default;
 
-$bg-color: #f2f2f2 !default;
+$bg-color: #f8f8f8 !default;
 $light-grey: darken($bg-color, 8%) !default;
 $grey: darken($bg-color, 30%) !default;
 $dark-grey: darken($bg-color, 60%) !default;
