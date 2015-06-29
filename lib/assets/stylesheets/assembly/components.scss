@@ -11,7 +11,7 @@
   }
 
   .panel-header {
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-bottom: 1px solid lighten($light-grey, 3%);
     font-size: 1.6rem;
     &.grey {
@@ -36,12 +36,15 @@
     }
   }
   .panel-content {
-    padding: 20px;
+    padding: 20px 15px;
   }
   .panel-footer {
     @include clearfix();
-    padding: 5px 20px;
+    padding: 10px 15px;
     border-top: 1px solid lighten($light-grey, 3%);
+    .btn, button {
+      margin: 0;
+    }
   }
 }
 
