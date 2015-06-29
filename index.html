@@ -23,7 +23,7 @@
       </div>
       <ul class="navbar-right">
         <li><a href="#">Home</a></li>
-        <li class="dropdown"><a href="#">Dropdown <i class="icon ion-arrow-down-b"></i></a>
+        <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
           <ul>
             <li><a href="#">test</a></li>
             <li><a href="#">test</a></li>
@@ -39,7 +39,7 @@
             <li><a href="#">test</a></li>
           </ul>
         </li>
-        <li><a href="#"><i class="icon ion-person"></i> Users</a></li>
+        <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
       </ul>
     </nav>
 
@@ -81,14 +81,19 @@
         <div class="row">
           <div class="col-md-12">
 
-            <h2 class="header">Typography</h2>
+            <div class="header">
+              <h2>Typography</h2>
+            </div>
 
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
             <h4>Heading 4</h4>
 
-            <h3><i class="icon ion-map"></i> Heading with icon</h3>
+            <div class="header">
+              <h1>Heading element</h1>
+              <h3 class="subheading">Subheading</h3>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -140,7 +145,11 @@
         </div>
           <div class="row">
             <div class="col-md-12">
-              <h2 class="header">Tables</h2>
+
+              <div class="header">
+                <h2>Tables</h2>
+              </div>
+
               <table cellspacing="0" cellpadding="0" width="100%">
                 <thead>
                   <tr>
@@ -172,6 +181,40 @@
                   </tr>
                 </tfoot>
               </table>
+              <br/><br/>
+
+              <table class="table-border" cellspacing="0" cellpadding="0" width="100%">
+                <thead>
+                  <tr>
+                    <th>Enclosed table</th>
+                    <th>Table Header 2</th>
+                    <th>Table Header 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Division 1</th>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
+                  </tr>
+                  <tr class="even">
+                    <th>Division 1</th>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
+                  </tr>
+                  <tr>
+                    <th>Division 1</th>
+                    <td>Division 2</td>
+                    <td>Division 3</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3">* This is a table footer for extra information</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <br/><br/>
 
               <table class="table-striped" cellspacing="0" cellpadding="0" width="100%">
                 <thead>
@@ -204,7 +247,10 @@
                   </tr>
                 </tfoot>
               </table>
-              <h2 class="header">Forms</h2>
+
+              <div class="header">
+                <h2>Forms</h2>
+              </div>
             </div>
           </div>
 
@@ -312,7 +358,10 @@
           <div class="row">
             <div class="col-md-12">
 
-              <h2 class="header">Tabs</h2>
+              <div class="header">
+                <h2>Tabs</h2>
+              </div>
+
               <div id="tabs" class="tabs">
                 <nav>
                   <ul>
@@ -347,12 +396,17 @@
                 </div>
               </div>
 
-              <h2 class="header">Modals</h2>
+              <div class="header">
+                <h2>Modals</h2>
+              </div>
+
               <button id="modalButton">Open Modal</button>
               <button class="btn-secondary" id="modalButton2">Open large modal</button>
               <button class="btn-cancel" id="modalButton3">Open small modal</button>
 
-              <h2 class="header">Navbar</h2>
+              <div class="header">
+                <h2>Navigation</h2>
+              </div>
 
               <nav class="navbar">
                 <div class="navbar-brand">
@@ -360,7 +414,7 @@
                 </div>
                 <ul class="navbar-right">
                   <li><a href="#">Home</a></li>
-                  <li class="dropdown"><a href="#">Dropdown <i class="icon ion-arrow-down-b"></i></a>
+                  <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
                     <ul>
                       <li><a href="#">test</a></li>
                       <li><a href="#">test</a></li>
@@ -376,7 +430,7 @@
                       <li><a href="#">test</a></li>
                     </ul>
                   </li>
-                  <li><a href="#"><i class="icon ion-person"></i> Users</a></li>
+                  <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
                 </ul>
               </nav>
 
@@ -389,7 +443,7 @@
                 </div>
                 <ul class="navbar-right">
                   <li><a href="#">Home</a></li>
-                  <li class="dropdown"><a href="#">Dropdown <i class="icon ion-arrow-down-b"></i></a>
+                  <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
                     <ul>
                       <li><a href="#">test</a></li>
                       <li><a href="#">test</a></li>
@@ -405,31 +459,86 @@
                       <li><a href="#">test</a></li>
                     </ul>
                   </li>
-                  <li><a href="#"><i class="icon ion-person"></i> Users</a></li>
+                  <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
                 </ul>
               </nav>
-
-              <h2 class="header">Panels</h2>
-
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
+              <div class="header">
+                <h4>Pills</h4>
+              </div>
+              <nav class="side-nav">
+                <ul>
+                  <li><a href="">testing is fun</a></li>
+                  <li><a href="" class="active">test blah</a></li>
+                  <li><a href="">test a thing</a></li>
+                  <li><a href="">test stuff</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-4">
+              <div class="header">
+                <h4>Enclosed</h4>
+              </div>
+              <nav class="side-nav panel">
+                <ul>
+                  <li><a href="">testing is fun</a></li>
+                  <li><a href="" class="active">test blah</a></li>
+                  <li><a href="">test a thing</a></li>
+                  <li><a href="">test stuff</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-4">
+              <div class="header">
+                <h4>Icons</h4>
+              </div>
+              <nav class="side-nav">
+                <ul>
+                  <li><a href="">testing is fun <i class="fa fa-cog fa-fw"></i></a></li>
+                  <li><a href="" class="active">test blah <i class="fa fa-user fa-fw"></i></a></li>
+                  <li><a href="">test a thing <i class="fa fa-dashboard fa-fw"></i></a></li>
+                  <li><a href="">test stuff <i class="fa fa-bar-chart fa-fw"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header">
+                <h2>Panels</h2>
+              </div>
+            </div>
+            <div class="col-md-4">
               <div class="panel grey-border">
-                <h3>This is a panel with a grey border</h3>
-                <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+                <div class="panel-header">This is a panel with a header</div>
+                <div class="panel-content">
+                  Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+                </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="panel warning-border">
-                <h3>This is a panel with a warning border</h3>
-                <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+                <div class="panel-header secondary">This is a panel with a secondary header</div>
+                <div class="panel-content">
+                  Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+                </div>
+                <div class="panel-footer">
+                  <button class="float-right">Action</button>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="panel success-border">
-                <h3>This is a panel with a success border</h3>
-                <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+                <div class="panel-header success">This is a panel with a success header</div>
+                <div class="panel-content">
+                  Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+                </div>
+                <div class="panel-footer">
+                  <button class="btn-cancel float-right">Action</button>
+                </div>
               </div>
             </div>
           </div>
@@ -441,43 +550,49 @@
         <div class="row">
           <div class="col-md-4">
             <div class="panel center">
-              <img class="app-icon" src="http://www.pixelmatortemplates.com/wp-content/uploads/2013/12/weather-app-icon-flat.jpg"/>
-              <h3>Better Analytics</h3>
-              <a href="#">NEON Adventures</a>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i>
-                <i class="fa fa-star-o"></i>
+              <div class="panel-content">
+                <img class="app-icon" src="http://www.pixelmatortemplates.com/wp-content/uploads/2013/12/weather-app-icon-flat.jpg"/>
+                <h3>Better Analytics</h3>
+                <a href="#">NEON Adventures</a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="panel center">
-              <img class="app-icon" src="http://www.pixelmatortemplates.com/wp-content/uploads/2013/12/weather-app-icon-flat.jpg"/>
-              <h3>Better Analytics</h3>
-              <a href="#">NEON Adventures</a>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i>
+              <div class="panel-content">
+                <img class="app-icon" src="http://www.pixelmatortemplates.com/wp-content/uploads/2013/12/weather-app-icon-flat.jpg"/>
+                <h3>Better Analytics</h3>
+                <a href="#">NEON Adventures</a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="panel center">
-              <img class="app-icon" src="http://www.pixelmatortemplates.com/wp-content/uploads/2013/12/weather-app-icon-flat.jpg"/>
-              <h3>Better Analytics</h3>
-              <a href="#">NEON Adventures</a>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-empty"></i>
-                <i class="fa fa-star-o"></i>
+              <div class="panel-content">
+                <img class="app-icon" src="http://www.pixelmatortemplates.com/wp-content/uploads/2013/12/weather-app-icon-flat.jpg"/>
+                <h3>Better Analytics</h3>
+                <a href="#">NEON Adventures</a>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-empty"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -487,7 +602,7 @@
 
     <div id="modal" class="assembly-modal">
       <div class="assembly-modal-wrapper">
-        <div class="assembly-modal-header">
+        <div class="assembly-modal-header primary">
           This is a modal
           <div class="assembly-modal-close">
             <i class="fa fa-times close-icon"></i>
@@ -505,7 +620,7 @@
 
     <div id="modal2" class="assembly-modal large-modal full-height">
       <div class="assembly-modal-wrapper">
-        <div class="assembly-modal-header">
+        <div class="assembly-modal-header secondary">
           This is a large modal
           <div class="assembly-modal-close">
             <i class="fa fa-times close-icon"></i>
