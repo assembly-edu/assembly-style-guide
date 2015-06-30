@@ -433,12 +433,31 @@
           line-height: inherit;
         }
       }
+      ul {
+        background: darken($bg-color, 3%);
+        border-radius: 0 0 $global-radius $global-radius;
+        margin-top: -3px;
+        overflow: hidden;
+        li {
+          margin: 0;
+        }
+        a {
+          padding-left: 30px;
+          border-radius: 0;
+          &:hover {
+            background: darken($bg-color, 8%);
+          }
+        }
+      }
     }
   }
   &.panel {
     li {
       margin: 0;
       a {
+        border-radius: 0;
+      }
+      ul {
         border-radius: 0;
       }
     }
