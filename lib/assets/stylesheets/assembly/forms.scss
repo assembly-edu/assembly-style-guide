@@ -138,6 +138,7 @@ label > .label-body {
 .input-group {
   display: block;
   margin-bottom: 20px;
+  color: $font-color;
   &.inline {
     input, textarea, select {
       display: inline-block;
@@ -174,9 +175,11 @@ label > .label-body {
     background-color: #fff;
     border-radius: 3px;
     margin: 5px 0;
-    margin-right: 10px;
+    margin-right: 5px;
     font-weight: 400;
     border: 1px solid darken($light-grey, 5%);
     border-bottom: 2px solid darken($light-grey, 5%);
+    cursor: pointer;
+    color: $font-color;
   }
 }

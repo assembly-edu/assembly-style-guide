@@ -459,6 +459,7 @@
       }
       ul {
         border-radius: 0;
+        border-bottom: 1px solid darken($bg-color, 8%);
       }
     }
   }
