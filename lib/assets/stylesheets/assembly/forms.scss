@@ -57,7 +57,7 @@ input {
   &[type="password"]:focus {
     border: 1px solid $primary-color;
     outline: 0;
-    box-shadow: inset 0px 0px 0px 1px rgba($primary-color,1);
+    box-shadow: 0px 0px 2px rgba($primary-color,1);
   }
 }
 
@@ -106,7 +106,7 @@ textarea:focus,
 select:focus {
   border: 1px solid $primary-color;
   outline: 0;
-  box-shadow: inset 0px 0px 0px 1px rgba($primary-color,1);
+  box-shadow: 0px 0px 2px rgba($primary-color,1);
 }
 
 label,
@@ -140,10 +140,45 @@ label > .label-body {
   margin-bottom: 20px;
   color: $font-color;
   &.inline {
-    input, textarea, select {
-      display: inline-block;
-      width: auto;
+    display: table;
+    input, textarea, select, label {
+      display: table-cell;
     }
+    label {
+      padding-right: 10px;
+    }
+  }
+}
+
+.input-group-inset {
+  display: table;
+  width: 100%;
+  margin: 5px 0;
+  input:first-child, .input-inset:first-child {
+    border-radius: $global-radius 0 0 $global-radius;
+  }
+  input:last-child, .input-inset:last-child {
+    border-radius: 0 $global-radius $global-radius 0;
+  }
+  .input-inset:last-child {
+    border-left: 0;
+  }
+  .input-inset:first-child {
+    border-right: 0;
+  }
+  .input-inset {
+    display: table-cell;
+    width: 1%;
+    background: $light-grey;
+    padding: 0 10px;
+    border: 1px solid darken($light-grey, 5%);
+    box-shadow: 0px 1px 0px darken($light-grey, 5%);
+    color: $grey;
+  }
+  input {
+    display: table-cell;
+    width: 100%;
+    margin: 0;
   }
 }
 
