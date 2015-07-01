@@ -389,6 +389,12 @@
       padding: 10px 0;
     }
   }
+  .input-group {
+    margin: 0 10px;
+    input, select, textarea {
+      margin: 11px 0;
+    }
+  }
   .navbar-right {
     float: right;
   }
