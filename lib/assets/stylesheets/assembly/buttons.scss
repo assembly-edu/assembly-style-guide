@@ -99,3 +99,12 @@ input[type="button"]:focus {
     color: #fff;
   }
 }
+
+.button-group {
+  display: table;
+  width: 100%;
+  button, .btn {
+    display: table-cell;
+    border-radius: 0;
+  }
+}
