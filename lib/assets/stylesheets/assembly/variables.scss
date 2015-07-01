@@ -1,11 +1,11 @@
 // Colors
 $primary-color: #7ED0D6 !default;
-$primary-color-light: lighten(#7ED0D6, 15%) !default;
-$primary-color-dark: desaturate(darken(#7ED0D6, 8%), 10%) !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: desaturate(darken($primary-color, 8%), 10%) !default;
 
 $secondary-color: #FF6B6B !default;
-$secondary-color-light: lighten(#FF6B6B, 15%) !default;
-$secondary-color-dark: desaturate(darken(#FF6B6B, 20%), 30%) !default;
+$secondary-color-light: lighten($secondary-color, 15%) !default;
+$secondary-color-dark: desaturate(darken($secondary-color, 20%), 30%) !default;
 
 $bg-color: #f8f8f8 !default;
 $light-grey: darken($bg-color, 8%) !default;
