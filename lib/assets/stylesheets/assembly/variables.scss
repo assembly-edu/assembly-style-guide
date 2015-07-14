@@ -11,18 +11,18 @@ $bg-color: #f8f8f8 !default;
 $light-grey: darken($bg-color, 8%) !default;
 $grey: darken($bg-color, 30%) !default;
 $dark-grey: darken($bg-color, 60%) !default;
-$slate-grey: #879EAD;
+$slate-grey: #879EAD !default;
 
 $font-color: #555 !default;
 
-$warning-color: #FB9017;
-$danger-color: #F74427;
-$success-color: #86D68C;
+$warning-color: #FB9017 !default;
+$danger-color: #F74427 !default;
+$success-color: #86D68C !default;
 
 // Typography
 $font-family: "Lato", sans-serif !default;
 
 // Misc
 $global-radius: 3px !default;
-$medium-shadow: 0px 0px 2px rgba(0,0,0,0.15), 0px 2px 6px rgba(0, 0, 0, 0.15);
-$light-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+$medium-shadow: 0px 0px 2px rgba(0,0,0,0.15), 0px 2px 6px rgba(0, 0, 0, 0.15) !default;
+$light-shadow: 0px 1px 3px rgba(0,0,0,0.15) !default;

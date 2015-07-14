@@ -424,6 +424,15 @@
     list-style-type: none;
     li {
       margin: 0 0 6px;
+      &.active {
+        > a {
+          background: $primary-color;
+          color: #fff;
+        }
+        ul {
+          display: block;
+        }
+      }
       a {
         display: block;
         color: $font-color;
@@ -432,10 +441,6 @@
         &:hover {
           background: darken($bg-color, 3%);
           text-decoration: none;
-        }
-        &.active {
-          background: $primary-color;
-          color: #fff;
         }
         i {
           float: right;
@@ -447,6 +452,7 @@
         border-radius: 0 0 $global-radius $global-radius;
         margin-top: -3px;
         overflow: hidden;
+        display: none;
         li {
           margin: 0;
         }
