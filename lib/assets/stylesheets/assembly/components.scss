@@ -459,6 +459,16 @@
         display: none;
         li {
           margin: 0;
+          &.active {
+            a {
+              background: darken($bg-color, 8%);
+              color: $font-color;
+              &:hover {
+                background: darken($bg-color, 8%);
+                color: $font-color;
+              }
+            }
+          }
         }
         a {
           padding-left: 30px;
