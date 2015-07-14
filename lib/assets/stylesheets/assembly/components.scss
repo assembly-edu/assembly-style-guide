@@ -428,6 +428,10 @@
         > a {
           background: $primary-color;
           color: #fff;
+          &:hover {
+            background: $primary-color;
+            color: #fff;
+          }
         }
         ul {
           display: block;
