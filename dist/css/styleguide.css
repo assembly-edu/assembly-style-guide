@@ -10,9 +10,17 @@ section { padding: 80px 0; }
   max-width: 200px;
   margin-bottom: 30px;
 }
+.swatch-container {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
 .swatch {
-  height: 200px;
-  margin-bottom: 30px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 .rating {
   color: #7ED0D6;
@@ -24,4 +32,12 @@ section { padding: 80px 0; }
 
 body {
   padding-top: 60px;
+}
+
+.nomargin {
+  margin-top: 0;
+}
+
+.sidebar {
+  height: 100%;
 }

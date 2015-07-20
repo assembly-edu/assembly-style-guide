@@ -1,5 +1,17 @@
+function onScroll(event){
+  var scrollPos = $(window).scrollTop();
+  $('#sidebar a').each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.offset().top - 70 <= scrollPos && refElement.offset().top + refElement.outerHeight() > scrollPos) {
+      $('#sidebar li').removeClass("active");
+      currLink.closest('li').addClass("active");
+    }
+  });
+}
+
 $(document).ready(function() {
-  $('#tabs').assemblyTabs();
+  $('#assembly-tabs').assemblyTabs();
 
   $('#modal').assemblyModal();
   $('#modal2').assemblyModal();
@@ -14,4 +26,16 @@ $(document).ready(function() {
   $('#modalButton3').click(function(){
     $('#modal3').assemblyModal('show');
   });
+
+  $('#sidebar a').click(function(){
+    $('#sidebar li').removeClass('active')
+    $(this).closest('li').addClass('active');
+  });
+
+  $("#sidebar").stick_in_parent({
+    bottoming: false,
+    offset_top: 100
+  });
+
+  $(document).on("scroll", onScroll);
 });

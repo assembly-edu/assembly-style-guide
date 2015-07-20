@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="dist/css/assembly.min.css">
     <link rel="stylesheet" href="dist/css/styleguide.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="dist/js/sticky-kit.js"></script>
     <script src="dist/js/assembly.min.js"></script>
-    <script src="dist/js/main.js"></script>
 
   </head>
   <body>
@@ -55,538 +55,622 @@
 
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="header">Colours</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="swatch bg-primary">&nbsp;<br/>&nbsp;</div>
-            <div class="swatch bg-primary-light">&nbsp;<br/>&nbsp;</div>
-            <div class="swatch bg-primary-dark">&nbsp;<br/>&nbsp;</div>
-          </div>
-          <div class="col-md-4">
-            <div class="swatch bg-secondary">&nbsp;<br/>&nbsp;</div>
-            <div class="swatch bg-secondary-light">&nbsp;<br/>&nbsp;</div>
-            <div class="swatch bg-secondary-dark">&nbsp;<br/>&nbsp;</div>
-          </div>
-          <div class="col-md-4">
-            <div class="swatch bg-warning">&nbsp;<br/>&nbsp;</div>
-            <div class="swatch bg-success">&nbsp;<br/>&nbsp;</div>
-            <div class="swatch bg-dark-grey">&nbsp;<br/>&nbsp;</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="header">
-              <h2>Typography</h2>
+        <div class="col-md-9">
+          <div id="colors">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header nomargin">
+                  <h2>Colours</h2>
+                </div>
+              </div>
             </div>
 
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-
-            <div class="header">
-              <h1>Heading element</h1>
-              <h3 class="subheading">Subheading</h3>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-primary">&nbsp;<br/>&nbsp;</div>
+                  #7ED0D6
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-primary-light">&nbsp;<br/>&nbsp;</div>
+                  #b8e5e8
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-primary-dark">&nbsp;<br/>&nbsp;</div>
+                  #6abcc2
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-secondary">&nbsp;<br/>&nbsp;</div>
+                  #FF6B6B
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-secondary-light">&nbsp;<br/>&nbsp;</div>
+                  #ffb8b8
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-secondary-dark">&nbsp;<br/>&nbsp;</div>
+                  #da2b2b
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-warning">&nbsp;<br/>&nbsp;</div>
+                  #FB9017
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-success">&nbsp;<br/>&nbsp;</div>
+                  #86D68C
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <div class="swatch-container">
+                  <div class="swatch bg-dark-grey">&nbsp;<br/>&nbsp;</div>
+                  #5f5f5f
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-            <p class="text-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-            <p>Nullam quis risus eget urna mollis ornare vel eu leo. <a href="#">Cum sociis natoque</a> penatibus dignissim convallis et magnis dis parturient <a href="#">an external link <i class="icon ion-android-open"></i></a> montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, <a href="#">a download link <i class="icon ion-android-download"></i></a> eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          </div>
-        </div>
+          <div id="typography">
+            <div class="row">
+              <div class="col-md-12">
 
-        <div class="row">
-          <div class="col-md-6">
-            <ol>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3
+                <div class="header">
+                  <h2>Typography</h2>
+                </div>
+
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+
+                <div class="header">
+                  <h1>Heading element</h1>
+                  <h3 class="subheading">Subheading</h3>
+                </div>
+
+                <pre>
+    <code>&lt;div class=&quot;header&quot;&gt;
+      &lt;h1&gt;Heading element&lt;/h1&gt;
+      &lt;h3 class=&quot;subheading&quot;&gt;Subheading&lt;/h3&gt;
+    &lt;/div&gt;</code>
+                </pre>
+
+                <p class="text-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. <a href="#">Cum sociis natoque</a> penatibus dignissim convallis et magnis dis parturient <a href="#">an external link <i class="icon ion-android-open"></i></a> montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, <a href="#">a download link <i class="icon ion-android-download"></i></a> eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
                 <ol>
-                  <li>List Item 3.1</li>
-                  <li>List Item 3.2
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3
                     <ol>
-                      <li>List Item 3.2.1</li>
-                      <li>List Item 3.2.2</li>
+                      <li>List Item 3.1</li>
+                      <li>List Item 3.2
+                        <ol>
+                          <li>List Item 3.2.1</li>
+                          <li>List Item 3.2.2</li>
+                        </ol>
+                      </li>
+                      <li>List Item 3.3</li>
                     </ol>
                   </li>
-                  <li>List Item 3.3</li>
+                  <li>List Item 4</li>
                 </ol>
-              </li>
-              <li>List Item 4</li>
-            </ol>
-          </div>
-          <div class="col-md-6">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3
+              </div>
+              <div class="col-md-6">
                 <ul>
-                  <li>List Item 3.1</li>
-                  <li>List Item 3.2
+                  <li>List Item 1</li>
+                  <li>List Item 2</li>
+                  <li>List Item 3
                     <ul>
-                      <li>List Item 3.2.1</li>
-                      <li>List Item 3.2.2</li>
+                      <li>List Item 3.1</li>
+                      <li>List Item 3.2
+                        <ul>
+                          <li>List Item 3.2.1</li>
+                          <li>List Item 3.2.2</li>
+                        </ul>
+                      </li>
+                      <li>List Item 3.3</li>
                     </ul>
                   </li>
-                  <li>List Item 3.3</li>
+                  <li>List Item 4</li>
                 </ul>
-              </li>
-              <li>List Item 4</li>
-            </ul>
-          </div>
-        </div>
-          <div class="row">
-            <div class="col-md-12">
-
-              <div class="header">
-                <h2>Tables</h2>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
 
-              <table cellspacing="0" cellpadding="0" width="100%">
-                <thead>
-                  <tr>
-                    <th>Standard table</th>
-                    <th>Table Header 2</th>
-                    <th>Table Header 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                  <tr class="even">
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                  <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>* This is a table footer for extra information</td>
-                  </tr>
-                </tfoot>
-              </table>
-              <br/><br/>
+                <div class="header" id="tables">
+                  <h2>Tables</h2>
+                </div>
 
-              <table class="table-border" cellspacing="0" cellpadding="0" width="100%">
-                <thead>
-                  <tr>
-                    <th>Enclosed table</th>
-                    <th>Table Header 2</th>
-                    <th>Table Header 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>Division 1</th>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                  <tr class="even">
-                    <th>Division 1</th>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                  <tr>
-                    <th>Division 1</th>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="3">* This is a table footer for extra information</td>
-                  </tr>
-                </tfoot>
-              </table>
-              <br/><br/>
+                <table cellspacing="0" cellpadding="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th>Standard table</th>
+                      <th>Table Header 2</th>
+                      <th>Table Header 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                    <tr class="even">
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                    <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>* This is a table footer for extra information</td>
+                    </tr>
+                  </tfoot>
+                </table>
+                <br/><br/>
 
-              <table class="table-striped" cellspacing="0" cellpadding="0" width="100%">
-                <thead>
-                  <tr>
-                    <th>Striped table</th>
-                    <th>Table Header 2</th>
-                    <th>Table Header 3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                  <tr class="even">
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                  <tr>
-                    <td>Division 1</td>
-                    <td>Division 2</td>
-                    <td>Division 3</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>* This is a table footer for extra information</td>
-                  </tr>
-                </tfoot>
-              </table>
+                <table class="table-border" cellspacing="0" cellpadding="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th>Enclosed table</th>
+                      <th>Table Header 2</th>
+                      <th>Table Header 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Division 1</th>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                    <tr class="even">
+                      <th>Division 1</th>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                    <tr>
+                      <th>Division 1</th>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="3">* This is a table footer for extra information</td>
+                    </tr>
+                  </tfoot>
+                </table>
+                <br/><br/>
 
-              <div class="header">
-                <h2>Forms</h2>
+                <table class="table-striped" cellspacing="0" cellpadding="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th>Striped table</th>
+                      <th>Table Header 2</th>
+                      <th>Table Header 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                    <tr class="even">
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                    <tr>
+                      <td>Division 1</td>
+                      <td>Division 2</td>
+                      <td>Division 3</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>* This is a table footer for extra information</td>
+                    </tr>
+                  </tfoot>
+                </table>
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <form>
-                <div class="input-group">
-                  <label for="text_field">Full name</label>
-                  <p class="hint-text">Type your full name in the text box below</p>
-                  <input type="text" id="text_field" placeholder="placeholder text" />
+          <div id="forms">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Forms</h2>
                 </div>
+                <form>
+                  <div class="input-group">
+                    <label for="text_field">Full name</label>
+                    <p class="hint-text">Type your full name in the text box below</p>
+                    <input type="text" id="text_field" placeholder="placeholder text" />
+                  </div>
 
-                <div class="input-group inline">
-                  <label for="text_field">Inline input</label>
-                  <input type="text" id="text_field" placeholder="placeholder text" />
-                </div>
+                  <div class="input-group inline">
+                    <label for="text_field">Inline input</label>
+                    <input type="text" id="text_field" placeholder="placeholder text" />
+                  </div>
 
-                <div class="input-group">
-                  <label for="text_field_disabled">Address line 1 <span class="badge">required</span></label>
-                  <input type="text" id="text_field_disabled" disabled value="I'm disabled" />
-                </div>
+                  <div class="input-group">
+                    <label for="text_field_disabled">Address line 1 <span class="badge">required</span></label>
+                    <input type="text" id="text_field_disabled" disabled value="I'm disabled" />
+                  </div>
 
-                <div class="input-group form-error">
-                  <label for="text_field_error">Address line 2</label>
-                  <p class="hint-text">Some hint text</p>
-                  <p class="error-text">This is not a valid address, please correct the error below</p>
-                  <input type="text" id="text_field_error" value="I have an error" />
-                </div>
+                  <div class="input-group form-error">
+                    <label for="text_field_error">Address line 2</label>
+                    <p class="hint-text">Some hint text</p>
+                    <p class="error-text">This is not a valid address, please correct the error below</p>
+                    <input type="text" id="text_field_error" value="I have an error" />
+                  </div>
 
-                <div class="input-group">
-                  <label for="text_area">Extra information</label>
-                  <textarea id="text_area"></textarea>
-                </div>
+                  <div class="input-group">
+                    <label for="text_area">Extra information</label>
+                    <textarea id="text_area"></textarea>
+                  </div>
 
-                <div class="input-group">
-                  <label>Full name</label>
-                  <div class="input-group-inset">
-                    <span class="input-inset">1</span>
-                    <input type="text" placeholder="placeholder text" />
+                  <div class="input-group">
+                    <label>Full name</label>
+                    <div class="input-group-inset">
+                      <span class="input-inset">1</span>
+                      <input type="text" placeholder="placeholder text" />
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label>Full name</label>
+                    <div class="input-group-inset">
+                      <input type="text" />
+                      <span class="input-inset"><i class="fa fa-cog"></i></span>
+                    </div>
+                  </div>
+                </form>
+                <br/>
+                <form>
+                  <div class="input-group inline">
+                    <label for="select_element">Country</label>
+                    <select id="select_element">
+                      <optgroup label="Option Group 1">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                      </optgroup>
+                      <optgroup label="Option Group 2">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3" disabled>Disabled Option</option>
+                      </optgroup>
+                    </select>
+                  </div>
+
+                  <label for="radio_button">Select an option</label>
+                  <div class="input-group radio-buttons">
+                    <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label>
+                    <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label>
+                    <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label>
+                  </div>
+
+                  <label for="radio_button">Select another option</label>
+                  <div class="input-group checkboxes">
+                    <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label>
+                    <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label>
+                    <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label>
+                  </div>
+
+                </form>
+
+                <button class="btn">Primary</button>
+                <input class="btn btn-secondary" type="reset" value="Secondary" />
+                <a class="btn btn-success">Success</a>
+                <input class="btn btn-cancel" type="submit" value="Cancel" />
+                <button class="btn btn-danger">Danger button</button>
+                <button class="btn btn-small">Small button</button>
+                <button class="btn btn-large">Large button</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="alert warning">
+                  <i class="alert-icon fa fa-exclamation-triangle"></i>
+                  <div class="alert-content">
+                    <h3>This is a warning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
                   </div>
                 </div>
-                <div class="input-group">
-                  <label>Full name</label>
-                  <div class="input-group-inset">
-                    <input type="text" />
-                    <span class="input-inset"><i class="fa fa-cog"></i></span>
+                <br/>
+                <br/>
+                <div class="alert success">
+                  <i class="alert-icon fa fa-check"></i>
+                  <div class="alert-content">
+                    <h3>This is successful</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="col-md-6">
-              <br/>
-              <form>
-                <div class="input-group inline">
-                  <label for="select_element">Country</label>
-                  <select id="select_element">
-                    <optgroup label="Option Group 1">
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                    </optgroup>
-                    <optgroup label="Option Group 2">
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3" disabled>Disabled Option</option>
-                    </optgroup>
-                  </select>
+                <br/>
+                <br/>
+                <div class="alert info">
+                  <i class="alert-icon fa fa-info-circle"></i>
+                  <div class="alert-content">
+                    <h3>This is some info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
+                  </div>
                 </div>
-
-                <label for="radio_button">Select an option</label>
-                <div class="input-group radio-buttons">
-                  <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label>
-                  <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label>
-                  <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label>
-                </div>
-
-                <label for="radio_button">Select another option</label>
-                <div class="input-group checkboxes">
-                  <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label>
-                  <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label>
-                  <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label>
-                </div>
-
-              </form>
-
-              <button class="btn">Primary</button>
-              <input class="btn btn-secondary" type="reset" value="Secondary" />
-              <a class="btn btn-success">Success</a>
-              <input class="btn btn-cancel" type="submit" value="Cancel" />
-              <button class="btn btn-danger">Danger button</button>
-              <button class="btn btn-small">Small button</button>
-              <button class="btn btn-large">Large button</button>
+                <br/>
+                <br/>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="alert warning">
-                <i class="alert-icon fa fa-exclamation-triangle"></i>
-                <div class="alert-content">
-                  <h3>This is a warning</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
+          <div id="tabs">
+            <div class="row">
+              <div class="col-md-12">
+
+                <div class="header">
+                  <h2>Tabs</h2>
+                </div>
+
+                <div id="assembly-tabs" class="tabs">
+                  <nav>
+                    <ul>
+                      <li><a href="#section-1">Shop</a></li>
+                      <li><a href="#section-2">Drinks</a></li>
+                      <li><a href="#section-3">Food</a></li>
+                      <li><a href="#section-4">Lab</a></li>
+                      <li><a href="#section-5">Order</a></li>
+                    </ul>
+                  </nav>
+                  <div class="tab-wrapper">
+                    <div class="tab-content" id="section-1">
+                      <h3>Sushi Gumbo Beetroot</h3>
+                      <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+                    </div>
+                    <div class="tab-content" id="section-2">
+                      <h3>Asparagus Cucumber Cake</h3>
+                      <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+                    </div>
+                    <div class="tab-content" id="section-3">
+                      <h3>Noodle Curry</h3>
+                      <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
+                    </div>
+                    <div class="tab-content" id="section-4">
+                      <h3>Tomato Cucumber Curd</h3>
+                      <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
+                    </div>
+                    <div class="tab-content" id="section-5">
+                      <h3>Radish Tomato</h3>
+                      <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <br/>
-              <br/>
-              <div class="alert success">
-                <i class="alert-icon fa fa-check"></i>
-                <div class="alert-content">
-                  <h3>This is successful</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
-                </div>
-              </div>
-              <br/>
-              <br/>
-              <div class="alert info">
-                <i class="alert-icon fa fa-info-circle"></i>
-                <div class="alert-content">
-                  <h3>This is some info</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
-                </div>
-              </div>
-              <br/>
-              <br/>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
+          <div id="modals">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Modals</h2>
+                </div>
 
-              <div class="header">
-                <h2>Tabs</h2>
+                <button id="modalButton">Open Modal</button>
+                <button class="btn-secondary" id="modalButton2">Open large modal</button>
+                <button class="btn-cancel" id="modalButton3">Open small modal</button>
               </div>
+            </div>
+          </div>
+          <div id="navbar">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Navbar</h2>
+                </div>
 
-              <div id="tabs" class="tabs">
-                <nav>
-                  <ul>
-                    <li><a href="#section-1">Shop</a></li>
-                    <li><a href="#section-2">Drinks</a></li>
-                    <li><a href="#section-3">Food</a></li>
-                    <li><a href="#section-4">Lab</a></li>
-                    <li><a href="#section-5">Order</a></li>
+                <nav class="navbar">
+                  <div class="navbar-brand">
+                    App name
+                  </div>
+                  <div class="input-group inline navbar-left">
+                    <label><i class="fa fa-search"></i></label>
+                    <input type="text" id="text_field" placeholder="search for..." />
+                  </div>
+                  <ul class="navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
+                      <ul>
+                        <li><a href="#">test</a></li>
+                        <li><a href="#">test</a></li>
+                        <li><a href="#">test</a></li>
+                        <li><a href="#">test</a>
+                          <ul>
+                            <li><a href="#">test</a></li>
+                            <li><a href="#">test</a></li>
+                            <li><a href="#">test</a></li>
+                            <li><a href="#">test</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">test</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
                   </ul>
                 </nav>
-                <div class="tab-wrapper">
-                  <div class="tab-content" id="section-1">
-                    <h3>Sushi Gumbo Beetroot</h3>
-                    <p>Sushi gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.</p>
+
+                <br/>
+                <br/>
+
+                <nav class="navbar navbar-dark">
+                  <div class="navbar-brand">
+                    App name
                   </div>
-                  <div class="tab-content" id="section-2">
-                    <h3>Asparagus Cucumber Cake</h3>
-                    <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
-                  </div>
-                  <div class="tab-content" id="section-3">
-                    <h3>Noodle Curry</h3>
-                    <p>Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea.Sushi gumbo beet greens corn soko endive gumbo gourd.</p>
-                  </div>
-                  <div class="tab-content" id="section-4">
-                    <h3>Tomato Cucumber Curd</h3>
-                    <p>Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. </p>
-                  </div>
-                  <div class="tab-content" id="section-5">
-                    <h3>Radish Tomato</h3>
-                    <p>Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.</p>
-                  </div>
-                </div>
+                  <ul class="navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
+                      <ul>
+                        <li><a href="#">test</a></li>
+                        <li><a href="#">test</a></li>
+                        <li><a href="#">test</a></li>
+                        <li><a href="#">test</a>
+                          <ul>
+                            <li><a href="#">test</a></li>
+                            <li><a href="#">test</a></li>
+                            <li><a href="#">test</a></li>
+                            <li><a href="#">test</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">test</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
+                  </ul>
+                </nav>
               </div>
-
-              <div class="header">
-                <h2>Modals</h2>
-              </div>
-
-              <button id="modalButton">Open Modal</button>
-              <button class="btn-secondary" id="modalButton2">Open large modal</button>
-              <button class="btn-cancel" id="modalButton3">Open small modal</button>
-
-              <div class="header">
-                <h2>Navigation</h2>
-              </div>
-
-              <nav class="navbar">
-                <div class="navbar-brand">
-                  App name
-                </div>
-                <div class="input-group inline navbar-left">
-                  <label><i class="fa fa-search"></i></label>
-                  <input type="text" id="text_field" placeholder="search for..." />
-                </div>
-                <ul class="navbar-right">
-                  <li><a href="#">Home</a></li>
-                  <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
-                    <ul>
-                      <li><a href="#">test</a></li>
-                      <li><a href="#">test</a></li>
-                      <li><a href="#">test</a></li>
-                      <li><a href="#">test</a>
-                        <ul>
-                          <li><a href="#">test</a></li>
-                          <li><a href="#">test</a></li>
-                          <li><a href="#">test</a></li>
-                          <li><a href="#">test</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">test</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
-                </ul>
-              </nav>
-
-              <br/>
-              <br/>
-
-              <nav class="navbar navbar-dark">
-                <div class="navbar-brand">
-                  App name
-                </div>
-                <ul class="navbar-right">
-                  <li><a href="#">Home</a></li>
-                  <li class="dropdown"><a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
-                    <ul>
-                      <li><a href="#">test</a></li>
-                      <li><a href="#">test</a></li>
-                      <li><a href="#">test</a></li>
-                      <li><a href="#">test</a>
-                        <ul>
-                          <li><a href="#">test</a></li>
-                          <li><a href="#">test</a></li>
-                          <li><a href="#">test</a></li>
-                          <li><a href="#">test</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">test</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#"><i class="fa fa-user"></i> Users</a></li>
-                </ul>
-              </nav>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="header">
-                <h4>Pills</h4>
+          <div id="subnav">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Subnav</h2>
+                </div>
               </div>
-              <nav class="side-nav">
-                <ul>
-                  <li><a href="">testing is fun</a></li>
-                  <li class="active"><a href="">test blah</a>
-                    <ul>
-                      <li><a href="">sub nav</a></li>
-                      <li class="active"><a href="">sub nav</a></li>
-                      <li><a href="">sub nav</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="">test a thing</a></li>
-                  <li><a href="">test stuff</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="col-md-4">
-              <div class="header">
-                <h4>Enclosed</h4>
+              <div class="col-md-4">
+                <nav class="side-nav">
+                  <ul>
+                    <li><a href="">testing is fun</a></li>
+                    <li class="active"><a href="">test blah</a>
+                      <ul>
+                        <li><a href="">sub nav</a></li>
+                        <li class="active"><a href="">sub nav</a></li>
+                        <li><a href="">sub nav</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">test a thing</a></li>
+                    <li><a href="">test stuff</a></li>
+                  </ul>
+                </nav>
               </div>
-              <nav class="side-nav panel">
-                <ul>
-                  <li><a href="">testing is fun</a></li>
-                  <li class="active"><a href="">test blah</a>
-                    <ul>
-                      <li><a href="">sub nav</a></li>
-                      <li><a href="">sub nav</a></li>
-                      <li><a href="">sub nav</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="">test a thing</a></li>
-                  <li><a href="">test stuff</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="col-md-4">
-              <div class="header">
-                <h4>Icons</h4>
+              <div class="col-md-4">
+                <nav class="side-nav panel">
+                  <ul>
+                    <li><a href="">testing is fun</a></li>
+                    <li class="active"><a href="">test blah</a>
+                      <ul>
+                        <li><a href="">sub nav</a></li>
+                        <li><a href="">sub nav</a></li>
+                        <li><a href="">sub nav</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">test a thing</a></li>
+                    <li><a href="">test stuff</a></li>
+                  </ul>
+                </nav>
               </div>
-              <nav class="side-nav">
-                <ul>
-                  <li><a href="">testing is fun <i class="fa fa-cog fa-fw"></i></a></li>
-                  <li class="active"><a href="">test blah <i class="fa fa-user fa-fw"></i></a>
-                    <ul>
-                      <li><a href="">sub nav <i class="fa fa-chevron-right fa-fw"></i></a></li>
-                      <li><a href="">sub nav <i class="fa fa-chevron-right fa-fw"></i></a></li>
-                      <li><a href="">sub nav <i class="fa fa-chevron-right fa-fw"></i></a></li>
-                    </ul>
-                  </li>
-                  <li><a href="">test a thing <i class="fa fa-dashboard fa-fw"></i></a></li>
-                  <li><a href="">test stuff <i class="fa fa-bar-chart fa-fw"></i></a></li>
-                </ul>
-              </nav>
+              <div class="col-md-4">
+                <nav class="side-nav">
+                  <ul>
+                    <li><a href="">testing is fun <i class="fa fa-cog fa-fw"></i></a></li>
+                    <li class="active"><a href="">test blah <i class="fa fa-user fa-fw"></i></a>
+                      <ul>
+                        <li><a href="">sub nav <i class="fa fa-chevron-right fa-fw"></i></a></li>
+                        <li><a href="">sub nav <i class="fa fa-chevron-right fa-fw"></i></a></li>
+                        <li><a href="">sub nav <i class="fa fa-chevron-right fa-fw"></i></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">test a thing <i class="fa fa-dashboard fa-fw"></i></a></li>
+                    <li><a href="">test stuff <i class="fa fa-bar-chart fa-fw"></i></a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="header">
-                <h2>Panels</h2>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="panel grey-border">
-                <div class="panel-header">This is a panel with a header</div>
-                <div class="panel-content">
-                  Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+          <div id="panels">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Panels</h2>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="panel warning-border">
-                <div class="panel-header secondary">This is a panel with a secondary header</div>
-                <div class="panel-content">
-                  Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+              <div class="col-md-4">
+                <div class="panel grey-border">
+                  <div class="panel-header">This is a panel with a header</div>
+                  <div class="panel-content">
+                    Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+                  </div>
                 </div>
-                <div class="panel-footer">
-                  <button class="float-right">Action</button>
+              </div>
+              <div class="col-md-4">
+                <div class="panel warning-border">
+                  <div class="panel-header secondary">This is a panel with a secondary header</div>
+                  <div class="panel-content">
+                    Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+                  </div>
+                  <div class="panel-footer">
+                    <button class="float-right">Action</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel success-border">
+                  <div class="panel-header success">This is a panel with a success header</div>
+                  <div class="panel-content">
+                    Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
+                  </div>
+                  <div class="panel-footer">
+                    <button class="btn-cancel float-right">Action</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="panel success-border">
-                <div class="panel-header success">This is a panel with a success header</div>
-                <div class="panel-content">
-                  Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce tomato kale arugula melon sierra leone bologi rutabaga tigernut.
-                </div>
-                <div class="panel-footer">
-                  <button class="btn-cancel float-right">Action</button>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sidebar">
+          <div id="sidebar">
+            <nav class="side-nav">
+              <ul>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tabs">Tabs</a></li>
+                <li><a href="#modals">Modals</a></li>
+                <li><a href="#navbar">Navbar</a></li>
+                <li><a href="#subnav">Subnav</a></li>
+                <li><a href="#panels">Panels</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
 
     <div id="modal" class="assembly-modal">
       <div class="assembly-modal-wrapper">
@@ -633,6 +717,8 @@
         </div>
       </div>
     </div>
+
+    <script src="dist/js/main.js"></script>
 
   </body>
 </html>
