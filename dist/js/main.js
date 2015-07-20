@@ -3,7 +3,7 @@ function onScroll(event){
   $('#sidebar a').each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
-    if (refElement.offset().top - 70 <= scrollPos && refElement.offset().top + refElement.outerHeight() > scrollPos) {
+    if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.outerHeight() > scrollPos) {
       $('#sidebar li').removeClass("active");
       currLink.closest('li').addClass("active");
     }
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   $("#sidebar").stick_in_parent({
     bottoming: false,
-    offset_top: 100
+    offset_top: 20
   });
 
   $(document).on("scroll", onScroll);
