@@ -114,14 +114,13 @@
                   <h3 class="subheading">Subheading</h3>
                 </div>
 
-                <pre>
-    <code>&lt;div class=&quot;header&quot;&gt;
-      &lt;h1&gt;Heading element&lt;/h1&gt;
-      &lt;h3 class=&quot;subheading&quot;&gt;Subheading&lt;/h3&gt;
-    &lt;/div&gt;</code>
-                </pre>
+<pre><code>&lt;div class=&quot;header&quot;&gt;
+  &lt;h1&gt;Heading element&lt;/h1&gt;
+  &lt;h3 class=&quot;subheading&quot;&gt;Subheading&lt;/h3&gt;
+&lt;/div&gt;</code></pre>
 
                 <p class="text-intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+<pre><code>&lt;p class=&quot;text-intro&quot;&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/p&gt;</code></pre>
                 <p>Nullam quis risus eget urna mollis ornare vel eu leo. <a href="#">Cum sociis natoque</a> penatibus dignissim convallis et magnis dis parturient <a href="#">an external link <i class="icon ion-android-open"></i></a> montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, <a href="#">a download link <i class="icon ion-android-download"></i></a> eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
               </div>
             </div>
@@ -204,7 +203,11 @@
                     </tr>
                   </tfoot>
                 </table>
-                <br/><br/>
+<pre><code>&lt;table class=&quot;full-width&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;content&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
 
                 <table class="table-border" cellspacing="0" cellpadding="0" width="100%">
                   <thead>
@@ -237,7 +240,11 @@
                     </tr>
                   </tfoot>
                 </table>
-                <br/><br/>
+<pre><code>&lt;table class=&quot;table-border&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;content&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
 
                 <table class="table-striped" cellspacing="0" cellpadding="0" width="100%">
                   <thead>
@@ -270,6 +277,11 @@
                     </tr>
                   </tfoot>
                 </table>
+<pre><code>&lt;table class=&quot;table-striped&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;content&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -286,15 +298,31 @@
                     <input type="text" id="text_field" placeholder="placeholder text" />
                   </div>
 
+<pre><code>&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label for=&quot;text_field&quot;&gt;Full name&lt;/label&gt;
+  &lt;p class=&quot;hint-text&quot;&gt;Type your full name in the text box below&lt;/p&gt;
+  &lt;input type=&quot;text&quot; id=&quot;text_field&quot; placeholder=&quot;placeholder text&quot; /&gt;
+&lt;/div&gt;</code></pre>
+
                   <div class="input-group inline">
                     <label for="text_field">Inline input</label>
                     <input type="text" id="text_field" placeholder="placeholder text" />
                   </div>
 
+<pre><code>&lt;div class=&quot;input-group inline&quot;&gt;
+  &lt;label for=&quot;text_field&quot;&gt;Inline input&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;text_field&quot; placeholder=&quot;placeholder text&quot; /&gt;
+&lt;/div&gt;</code></pre>
+
                   <div class="input-group">
                     <label for="text_field_disabled">Address line 1 <span class="badge">required</span></label>
                     <input type="text" id="text_field_disabled" disabled value="I'm disabled" />
                   </div>
+
+<pre><code>&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label for=&quot;text_field_disabled&quot;&gt;Address line 1 &lt;span class=&quot;badge&quot;&gt;required&lt;/span&gt;&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;text_field_disabled&quot; disabled value=&quot;I&#39;m disabled&quot; /&gt;
+&lt;/div&gt;</code></pre>
 
                   <div class="input-group form-error">
                     <label for="text_field_error">Address line 2</label>
@@ -303,28 +331,49 @@
                     <input type="text" id="text_field_error" value="I have an error" />
                   </div>
 
+<pre><code>&lt;p class=&quot;error-text&quot;&gt;This is not a valid address, please correct the error below&lt;/p&gt;
+&lt;input type=&quot;text&quot; id=&quot;text_field_error&quot; value=&quot;I have an error&quot; /&gt;</code></pre>
+
                   <div class="input-group">
-                    <label for="text_area">Extra information</label>
+                    <label for="text_area">Text area</label>
                     <textarea id="text_area"></textarea>
                   </div>
 
+<pre><code>&lt;textarea&gt;&lt;/textarea&gt;</code></pre>
+
                   <div class="input-group">
-                    <label>Full name</label>
+                    <label>Inset left</label>
                     <div class="input-group-inset">
                       <span class="input-inset">1</span>
                       <input type="text" placeholder="placeholder text" />
                     </div>
                   </div>
                   <div class="input-group">
-                    <label>Full name</label>
+                    <label>Inset right</label>
                     <div class="input-group-inset">
                       <input type="text" />
                       <span class="input-inset"><i class="fa fa-cog"></i></span>
                     </div>
                   </div>
-                </form>
-                <br/>
-                <form>
+
+<pre><code>&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt;Full name&lt;/label&gt;
+  &lt;div class=&quot;input-group-inset&quot;&gt;
+    &lt;span class=&quot;input-inset&quot;&gt;1&lt;/span&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder text&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+or
+
+<pre><code>&lt;div class=&quot;input-group&quot;&gt;
+  &lt;label&gt;Full name&lt;/label&gt;
+  &lt;div class=&quot;input-group-inset&quot;&gt;
+    &lt;span class=&quot;input-inset&quot;&gt;1&lt;/span&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;placeholder text&quot; /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
                   <div class="input-group inline">
                     <label for="select_element">Country</label>
                     <select id="select_element">
@@ -340,6 +389,10 @@
                     </select>
                   </div>
 
+<pre><code>&lt;select&gt;
+  &lt;option&gt;An option&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
                   <label for="radio_button">Select an option</label>
                   <div class="input-group radio-buttons">
                     <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label>
@@ -354,19 +407,70 @@
                     <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label>
                   </div>
 
-                </form>
+<pre><code>&lt;div class=&quot;input-group radio-buttons&quot;&gt;
+  &lt;label&gt;&lt;input type=&quot;radio&quot; class=&quot;radio&quot; /&gt; Radio&lt;/label&gt;
+  &lt;label&gt;&lt;input type=&quot;radio&quot; class=&quot;radio&quot; /&gt; Radio&lt;/label&gt;
+&lt;/div&gt;
 
-                <button class="btn">Primary</button>
-                <input class="btn btn-secondary" type="reset" value="Secondary" />
-                <a class="btn btn-success">Success</a>
-                <input class="btn btn-cancel" type="submit" value="Cancel" />
-                <button class="btn btn-danger">Danger button</button>
-                <button class="btn btn-small">Small button</button>
-                <button class="btn btn-large">Large button</button>
+&lt;div class=&quot;input-group checkboxes&quot;&gt;
+  &lt;label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; /&gt; Checkbox&lt;/label&gt;
+  &lt;label&gt;&lt;input type=&quot;checkbox&quot; class=&quot;checkbox&quot; /&gt; Checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+
+                </form>
               </div>
             </div>
+          </div>
+          <div id="buttons">
             <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Buttons</h2>
+                </div>
+                <button class="btn">Button</button>
+                <input class="btn" type="submit" value="Input" />
+                <a class="btn">Link</a>
+                <br/>
+<pre><code>&lt;button class=&quot;btn&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;btn&quot; type=&quot;submit&quot; value=&quot;Input&quot; /&gt;
+&lt;a class=&quot;btn&quot;&gt;Link&lt;/a&gt;</code></pre>
+                <h4>Classes</h4>
+              </div>
               <div class="col-md-6">
+                <button class="btn">Primary</button> <code>.btn</code><br/>
+                <button class="btn btn-secondary">Secondary</button> <code>.btn .btn-secondary</code><br/>
+                <button class="btn btn-cancel">Cancel</button> <code>.btn .btn-cancel</code><br/>
+                <button class="btn btn-danger">Danger</button> <code>.btn .btn-danger</code><br/>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-warning">Warning</button> <code>.btn .btn-warning</code><br/>
+                <button class="btn btn-small">Small</button> <code>.btn .btn-small</code><br/>
+                <button class="btn btn-large">Large</button> <code>.btn .btn-large</code><br/>
+              </div>
+            </div>
+          </div>
+          <div id="alerts">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header">
+                  <h2>Alerts</h2>
+                </div>
+                <div class="alert info">
+                  <i class="alert-icon fa fa-info-circle"></i>
+                  <div class="alert-content">
+                    <h3>This is some info</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
+                  </div>
+                </div>
+
+<pre><code>&lt;div class=&quot;alert info&quot;&gt;
+  &lt;i class=&quot;alert-icon fa fa-info-circle&quot;&gt;&lt;/i&gt;
+  &lt;div class=&quot;alert-content&quot;&gt;
+    &lt;h3&gt;This is some info&lt;/h3&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
                 <div class="alert warning">
                   <i class="alert-icon fa fa-exclamation-triangle"></i>
                   <div class="alert-content">
@@ -374,6 +478,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
                   </div>
                 </div>
+                <br/>
+                <br/>
+                <code>.alert .warning</code>
                 <br/>
                 <br/>
                 <div class="alert success">
@@ -385,15 +492,7 @@
                 </div>
                 <br/>
                 <br/>
-                <div class="alert info">
-                  <i class="alert-icon fa fa-info-circle"></i>
-                  <div class="alert-content">
-                    <h3>This is some info</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est.</p>
-                  </div>
-                </div>
-                <br/>
-                <br/>
+                <code>.alert .success</code>
               </div>
             </div>
           </div>
@@ -626,6 +725,8 @@
                 <li><a href="#colors">Colors</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#forms">Forms</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#alerts">Alerts</a></li>
                 <li><a href="#tabs">Tabs</a></li>
                 <li><a href="#modals">Modals</a></li>
                 <li><a href="#navbar">Navbar</a></li>

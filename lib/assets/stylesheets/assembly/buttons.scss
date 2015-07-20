@@ -90,6 +90,16 @@ input[type="button"]:focus {
   }
 }
 
+.btn.btn-warning, button.btn-warning, input.btn-warning {
+  background-color: $warning-color;
+  border: 1px solid darken($warning-color, 10%);
+  border-bottom: 2px solid darken($warning-color, 10%);
+  &:hover {
+    background-color: darken($warning-color, 10%);
+    color: #fff;
+  }
+}
+
 .btn.btn-cancel, button.btn-cancel, input.btn-cancel {
   background-color: $slate-grey;
   border: 1px solid darken($slate-grey, 10%);
