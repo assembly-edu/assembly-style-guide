@@ -30,6 +30,29 @@
     <section>
       <div class="container">
         <div class="col-md-9">
+          <div id="usage">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header nomargin">
+                  <h2>Usage</h2>
+                </div>
+
+                <p>The Guide comes packaged as a rubygem, include it in your Gemfile with...</p>
+<pre><code>gem 'assembly-style-guide', github: 'neonadventures/assembly-style-guide'</code></pre>
+                <p>Then switch your application.css to be sass and remove the sprockets directives, replacing them with an assembly import statement...</p>
+<pre><code>@import 'assembly';</code></pre>
+
+<p>Alternatively you can include the hosted file on your site within the <code>&lt;head&gt;</code> tag:
+
+<pre><code>&lt;!-- Latest compiled and minified CSS --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://assembly.education/dist/css/assembly.min.css&quot;&gt;
+
+&lt;!-- Latest compiled and minified JS --&gt;
+&lt;script src=&quot;http://assembly.education/dist/js/assembly.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+              </div>
+            </div>
+          </div>
           <div id="colors">
             <div class="row">
               <div class="col-md-12">
@@ -823,6 +846,7 @@ $('#modalButton').click(function(){
           <div id="sidebar">
             <nav class="side-nav">
               <ul>
+                <li><a href="#usage">Usage</a></li>
                 <li><a href="#colors">Colors</a></li>
                 <li><a href="#typography">Typography</a></li>
                 <li><a href="#forms">Forms</a></li>
