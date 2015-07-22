@@ -7,6 +7,8 @@ var minifyCSS   = require('gulp-minify-css');
 var connect     = require('gulp-connect');
 var watch       = require('gulp-watch');
 var uglify      = require('gulp-uglify');
+var awspublish  = require('gulp-awspublish');
+var gulpIgnore  = require('gulp-ignore');
 
 gulp.task('sass', function () {
   gulp.src('./lib/assets/stylesheets/assembly.scss')
@@ -46,3 +48,20 @@ gulp.task('watch', function() {
 })
 
 gulp.task('default', ['sass', 'js', 'server', 'watch']);
+
+
+gulp.task('s3_sync', function() {
+
+  var publisher = awspublish.create({
+    region: 'eu-west-1',
+    params: {
+      Bucket: 'styles.assembly.education'
+    }
+  });
+
+  return gulp.src(['./**', '!./node_modules/**', '!./lib/**', , '!./sass-cache/**'])
+    .pipe(publisher.publish())
+    .pipe(publisher.sync())
+    .pipe(publisher.cache())
+    .pipe(awspublish.reporter());
+});
