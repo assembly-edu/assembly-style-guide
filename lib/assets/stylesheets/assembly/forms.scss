@@ -140,9 +140,9 @@ label > .label-body {
   margin-bottom: 20px;
   color: $font-color;
   &.inline {
-    display: table;
     input, textarea, select, label {
-      display: table-cell;
+      display: inline-block;
+      width: auto;
     }
     label {
       padding-right: 10px;
