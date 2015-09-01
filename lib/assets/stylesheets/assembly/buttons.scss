@@ -10,7 +10,7 @@ input[type="button"] {
   padding: 10px 20px;
   color: #fff;
   text-align: center;
-  font-size: em(16);
+  font-size: em(14);
   font-weight: 400;
   line-height: em(14);
   letter-spacing: em(1);
@@ -29,12 +29,12 @@ input[type="button"] {
         transition: background 200ms;
   &.btn-small {
     padding: 8px 12px;
-    font-size: em(14);
+    font-size: em(12);
     line-height: em(12);
   }
   &.btn-large {
     padding: 12px 30px;
-    font-size: em(20);
+    font-size: em(18);
   }
   i {
     padding-right: 3px;
