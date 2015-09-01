@@ -356,7 +356,7 @@
       padding: 0 25px;
       display: block;
       line-height: 60px;
-      font-size: em(14);
+      font-size: em(16);
       color: $font-color;
       &:hover, &:focus, &:visited {
         text-decoration: none;
@@ -512,7 +512,7 @@
   font-weight: 300;
   margin: 0 5px;
   letter-spacing: em(1);
-  line-height: em(10);
+  line-height: em(14);
   vertical-align: middle;
   &.warning {
     background: $warning-color;
