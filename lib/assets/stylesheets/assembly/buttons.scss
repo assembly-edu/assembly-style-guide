@@ -7,31 +7,33 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 20px;
   color: #fff;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: em(16);
   font-weight: 400;
-  line-height: 1.4rem;
-  letter-spacing: .05rem;
+  line-height: em(14);
+  letter-spacing: em(1);
   text-decoration: none;
   white-space: nowrap;
   background-color: $primary-color;
-  border-radius: $global-radius;
   border: none;
-  border: 1px solid $primary-color-dark;
-  border-bottom: 2px solid $primary-color-dark;
+  border-bottom: 1px solid $primary-color-dark;
   cursor: pointer;
   box-sizing: border-box;
   margin: 5px 0;
+  -webkit-transition: background 200ms;
+   -moz-transition: background 200ms;
+     -o-transition: background 200ms;
+        transition: background 200ms;
   &.btn-small {
-    padding: 8px 10px;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
+    padding: 8px 12px;
+    font-size: em(14);
+    line-height: em(12);
   }
   &.btn-large {
-    padding: 15px 25px;
-    font-size: 1.6rem;
+    padding: 12px 30px;
+    font-size: em(20);
   }
   i {
     padding-right: 3px;
@@ -62,8 +64,7 @@ input[type="button"]:focus {
 
 .btn.btn-secondary, button.btn-secondary, input.btn-secondary {
   background-color: $secondary-color;
-  border: 1px solid darken($secondary-color, 10%);
-  border-bottom: 2px solid darken($secondary-color, 10%);
+  border-bottom: 1px solid darken($secondary-color, 10%);
   &:hover {
     background-color: darken($secondary-color, 10%);
     color: #fff;
@@ -72,8 +73,7 @@ input[type="button"]:focus {
 
 .btn.btn-success, button.btn-success, input.btn-success {
   background-color: $success-color;
-  border: 1px solid darken($success-color, 10%);
-  border-bottom: 2px solid darken($success-color, 10%);
+  border-bottom: 1px solid darken($success-color, 10%);
   &:hover {
     background-color: darken($success-color, 10%);
     color: #fff;
@@ -82,8 +82,7 @@ input[type="button"]:focus {
 
 .btn.btn-danger, button.btn-danger, input.btn-danger {
   background-color: $danger-color;
-  border: 1px solid darken($danger-color, 10%);
-  border-bottom: 2px solid darken($danger-color, 10%);
+  border-bottom: 1px solid darken($danger-color, 10%);
   &:hover {
     background-color: darken($danger-color, 10%);
     color: #fff;
@@ -92,8 +91,7 @@ input[type="button"]:focus {
 
 .btn.btn-warning, button.btn-warning, input.btn-warning {
   background-color: $warning-color;
-  border: 1px solid darken($warning-color, 10%);
-  border-bottom: 2px solid darken($warning-color, 10%);
+  border-bottom: 1px solid darken($warning-color, 10%);
   &:hover {
     background-color: darken($warning-color, 10%);
     color: #fff;
@@ -102,8 +100,7 @@ input[type="button"]:focus {
 
 .btn.btn-cancel, button.btn-cancel, input.btn-cancel {
   background-color: $slate-grey;
-  border: 1px solid darken($slate-grey, 10%);
-  border-bottom: 2px solid darken($slate-grey, 10%);
+  border-bottom: 1px solid darken($slate-grey, 10%);
   &:hover {
     background-color: darken($slate-grey, 10%);
     color: #fff;

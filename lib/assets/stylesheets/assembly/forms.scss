@@ -6,12 +6,17 @@ select {
   height: 38px;
   padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
   background-color: #fff;
-  border: 1px solid darken($light-grey, 5%);
-  box-shadow: 0px 1px 0px darken($light-grey, 5%);
+  border: 1px solid $light-grey;
+  // box-shadow: 0px 1px 0px darken($light-grey, 5%);
   border-radius: $global-radius;
   box-sizing: border-box;
   margin: 5px 0;
+  font-size: em(16);
   width: 100%;
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+       -o-transition: all 300ms;
+          transition: all 300ms;
 }
 textarea {
   width: 100%;
@@ -57,7 +62,7 @@ input {
   &[type="password"]:focus {
     border: 1px solid $primary-color;
     outline: 0;
-    box-shadow: 0px 0px 4px $primary-color;
+    box-shadow: 0px 0px 6px lighten($primary-color, 5%);
   }
 }
 
@@ -71,7 +76,7 @@ input {
   &[type="color"]:disabled,
   &[type="password"]:disabled {
     color: $grey;
-    background-color: #fff;
+    background-color: lighten($light-grey, 6%);
   }
 }
 
@@ -94,11 +99,16 @@ input {
     height: 38px;
     padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
     background-color: #fff;
-    border: 1px solid darken($light-grey, 5%);
-    box-shadow: 0px 1px 0px darken($light-grey, 5%);
+    border: 1px solid $light-grey;
+    font-size: em(16);
     border-radius: $global-radius;
     margin: 5px 0;
+    line-height: 24px;
     width: 100%;
+    -webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+         -o-transition: all 300ms;
+            transition: all 300ms;
   }
 }
 
@@ -106,13 +116,13 @@ textarea:focus,
 select:focus {
   border: 1px solid $primary-color;
   outline: 0;
-  box-shadow: 0px 0px 4px $primary-color;
+  box-shadow: 0px 0px 6px lighten($primary-color, 5%);
 }
 
 label,
 legend {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: em(18);
   display: block;
 }
 
@@ -131,7 +141,7 @@ input {
 
 label > .label-body {
   display: inline-block;
-  margin-left: .5rem;
+  margin-left: em(1);
   font-weight: normal;
 }
 
@@ -151,71 +161,72 @@ label > .label-body {
   }
 }
 
-.input-group-inset {
+.input-with-inset {
   display: table;
   width: 100%;
   margin: 5px 0;
-  input:first-child, .input-inset:first-child {
+  input:first-child, .inset:first-child {
     border-radius: $global-radius 0 0 $global-radius;
   }
-  input:last-child, .input-inset:last-child {
+  input:last-child, .inset:last-child {
     border-radius: 0 $global-radius $global-radius 0;
   }
-  .input-inset:last-child {
+  .inset:last-child {
     border-left: 0;
   }
-  .input-inset:first-child {
+  .inset:first-child {
     border-right: 0;
   }
-  .input-inset {
+  .inset {
     display: table-cell;
     width: 1%;
     background: $light-grey;
     padding: 0 10px;
     border: 1px solid darken($light-grey, 5%);
-    box-shadow: 0px 1px 0px darken($light-grey, 5%);
     color: darken($grey, 20%);
     vertical-align: middle;
   }
   input {
     display: table-cell;
-    width: 99%;
+    width: 100%;
     margin: 0;
   }
 }
 
 .hint-text {
-  color: $grey;
+  color: darken($grey, 5%);
   margin: 0;
-  font-size: 1.4rem;
+  font-size: em(16);
 }
 
 .error-text {
   color: $danger-color;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: em(16);
 }
 
 .form-error {
 
   input, select, textarea {
     border: 1px solid $danger-color !important;
-    box-shadow: 0px 0px 4px $danger-color !important;
+    box-shadow: 0px 0px 6px lighten($danger-color, 15%) !important;
     color: $danger-color;
   }
 }
 
 .radio-buttons, .checkboxes {
+  input {
+    margin: 0 2px;
+  }
   label {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 8px 10px;
     background-color: #fff;
     border-radius: 3px;
     margin: 5px 0;
-    margin-right: 5px;
     font-weight: 400;
-    border: 1px solid darken($light-grey, 5%);
-    box-shadow: 0px 1px 0px darken($light-grey, 5%);
+    font-size: em(16);
+    border: 1px solid $light-grey;
     cursor: pointer;
     color: $font-color;
   }

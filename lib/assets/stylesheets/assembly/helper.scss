@@ -5,7 +5,7 @@
 .text-secondary { color: $secondary-color; }
 .text-intro {
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: em(18);
   font-weight: 200;
 }
 

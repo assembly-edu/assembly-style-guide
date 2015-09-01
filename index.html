@@ -141,6 +141,7 @@
                 <h2>Heading 2</h2>
                 <h3>Heading 3</h3>
                 <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
 
                 <div class="header">
                   <h1>Heading element</h1>
@@ -376,16 +377,16 @@
 
                   <div class="input-group">
                     <label>Inset left</label>
-                    <div class="input-group-inset">
-                      <span class="input-inset">1</span>
+                    <div class="input-with-inset">
+                      <span class="inset">1</span>
                       <input type="text" placeholder="placeholder text" />
                     </div>
                   </div>
                   <div class="input-group">
                     <label>Inset right</label>
-                    <div class="input-group-inset">
+                    <div class="input-with-inset">
                       <input type="text" />
-                      <span class="input-inset"><i class="fa fa-cog"></i></span>
+                      <span class="inset"><i class="fa fa-cog"></i></span>
                     </div>
                   </div>
 
@@ -734,7 +735,7 @@ $('#modalButton').click(function(){
                 </div>
               </div>
               <div class="col-md-4">
-                <nav class="side-nav">
+                <nav class="sub-nav">
                   <ul>
                     <li><a href="">testing is fun</a></li>
                     <li class="active"><a href="">test blah</a>
@@ -750,7 +751,7 @@ $('#modalButton').click(function(){
                 </nav>
               </div>
               <div class="col-md-4">
-                <nav class="side-nav panel">
+                <nav class="sub-nav panel">
                   <ul>
                     <li><a href="">testing is fun</a></li>
                     <li class="active"><a href="">test blah</a>
@@ -766,7 +767,7 @@ $('#modalButton').click(function(){
                 </nav>
               </div>
               <div class="col-md-4">
-                <nav class="side-nav">
+                <nav class="sub-nav">
                   <ul>
                     <li><a href="">testing is fun <i class="fa fa-cog fa-fw"></i></a></li>
                     <li class="active"><a href="">test blah <i class="fa fa-user fa-fw"></i></a>
@@ -782,7 +783,7 @@ $('#modalButton').click(function(){
                 </nav>
               </div>
               <div class="col-md-12">
-<pre><code>&lt;nav class=&quot;side-nav&quot;&gt;
+<pre><code>&lt;nav class=&quot;sub-nav&quot;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&quot;&quot;&gt;testing is fun&lt;/a&gt;&lt;/li&gt;
     &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;&quot;&gt;test blah&lt;/a&gt;
@@ -797,7 +798,7 @@ $('#modalButton').click(function(){
   &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 
-<p>Use <code>.side-nav .panel</code> to encase the nav in a panel.</p>
+<p>Use <code>.sub-nav .panel</code> to encase the nav in a panel.</p>
               </div>
             </div>
           </div>
@@ -854,7 +855,7 @@ $('#modalButton').click(function(){
         </div>
         <div class="col-md-3 sidebar">
           <div id="sidebar">
-            <nav class="side-nav">
+            <nav class="sub-nav">
               <ul>
                 <li><a href="#usage">Usage</a></li>
                 <li><a href="#colors">Colors</a></li>
