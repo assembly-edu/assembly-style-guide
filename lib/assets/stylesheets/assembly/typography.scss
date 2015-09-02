@@ -7,8 +7,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: em(36); line-height: em(18); }
 h2 { font-size: em(28); line-height: em(18); }
 h3 { font-size: em(22); line-height: em(18); }
-h4 { font-size: em(18); line-height: em(18); font-weight: bold; }
-h5 { font-size: em(16); line-height: em(18); font-weight: bold; }
+h4 { font-size: em(18); line-height: em(18); }
+h5 { font-size: em(16); line-height: em(18); }
 
 .header {
   padding-bottom: 1em;
@@ -20,7 +20,7 @@ h5 { font-size: em(16); line-height: em(18); font-weight: bold; }
   margin: 0;
 }
 .header .subheading {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 p {
