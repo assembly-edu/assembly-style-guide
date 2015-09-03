@@ -378,10 +378,14 @@
     padding: 0 25px;
     height: 100%;
     font-size: em(16);
+    a {
+      display: block;
+    }
     img {
-      height: 50px;
+      height: 100%;
       width: auto;
-      padding: 0;
+      display: block;
+      margin: 10px 0;
     }
   }
   .input-group {
