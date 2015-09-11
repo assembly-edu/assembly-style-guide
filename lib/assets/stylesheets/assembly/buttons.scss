@@ -13,7 +13,6 @@ input[type="button"] {
   font-size: em(14);
   font-weight: 400;
   line-height: em(14);
-  letter-spacing: em(1);
   text-decoration: none;
   white-space: nowrap;
   background-color: $primary-color;
@@ -21,6 +20,7 @@ input[type="button"] {
   border-radius: 2px;
   border-bottom: 1px solid $primary-color-dark;
   cursor: pointer;
+  letter-spacing: 0.02em;
   box-sizing: border-box;
   margin: 5px 0;
   -webkit-transition: background 200ms;

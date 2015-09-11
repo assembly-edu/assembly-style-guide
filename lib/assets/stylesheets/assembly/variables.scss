@@ -1,5 +1,5 @@
 // Colors
-$primary-color: #7ED0D6 !default;
+$primary-color: #88ccc9 !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: desaturate(darken($primary-color, 5%), 10%) !default;
 
@@ -19,8 +19,12 @@ $warning-color: #FB9017 !default;
 $danger-color: #F74427 !default;
 $success-color: #86D68C !default;
 
+$sans: 'Noto Sans', sans-serif;
+$serif: 'Noto Serif', serif;
+
 // Typography
-$font-family: "Lato", sans-serif !default;
+$sans-font: 'Noto Sans', sans-serif !default;
+$font-family: $sans-font;
 
 // Misc
 $global-radius: 2px !default;
