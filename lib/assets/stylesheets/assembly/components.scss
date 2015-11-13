@@ -238,6 +238,8 @@
         margin: 0;
         display: inline-block;
         position: relative;
+        color: #ccc;
+        padding: 10px 30px;
         &.tab-current {
           border-bottom: 2px solid $primary-color;
           z-index: 100;
