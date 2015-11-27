@@ -50,27 +50,27 @@ a {
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ul {
-  list-style: circle inside;
+  padding-left: 20px;
+  list-style: circle;
 }
 
 ol {
-  list-style: decimal inside;
-  padding-left: 0;
+  padding-left: 20px;
+  list-style: decimal;
   margin-top: 0;
 }
 
 ul {
-  padding-left: 0;
   margin-top: 0;
   ul, ol {
-    margin: em(15) 0 em(15) em(30);
+    margin: em(15) 0 em(15) 0;
     font-size: 90%;
   }
 }
 
 ol {
   ol, ul {
-    margin: em(15) 0 em(15) em(30);
+    margin: em(15) 0 em(15) 0;
     font-size: 90%;
   }
 }
