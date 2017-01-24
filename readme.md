@@ -15,7 +15,7 @@ Usage in Ruby on Rails Projects
 
 The Guide comes packaged as a rubygem, include it in your Gemfile with...
 
-    gem 'assembly-style-guide', github: 'neonadventures/assembly-style-guide'
+    gem 'assembly-style-guide', github: 'assembly-edu/assembly-style-guide'
 
 Then switch your `application.css` to be sass and remove the sprockets directives, replacing them with an assembly import statement...
 
