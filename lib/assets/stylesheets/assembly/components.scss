@@ -150,7 +150,7 @@
     max-width: 720px;
     min-width: 300px;
     border-radius: $global-radius;
-    overflow: hidden;
+    overflow: visible;
     text-align: left;
     position: relative;
     box-shadow: $medium-shadow;
@@ -414,7 +414,7 @@
 // Side Nav //
 
 .sub-nav {
-  margin: 0;
+  margin: 0 0 20px 0;
 
   ul {
     margin: 0;
