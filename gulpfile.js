@@ -49,8 +49,7 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['sass', 'js', 'server', 'watch']);
 
-
-gulp.task('s3_sync', function() {
+gulp.task('s3_sync', ['sass', 'js'], function() {
 
   var publisher = awspublish.create({
     region: 'eu-west-1',

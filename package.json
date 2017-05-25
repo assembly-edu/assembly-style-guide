@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "gulp watch",
-    "start": "gulp server"
+    "start": "gulp server",
+    "release": "gulp s3_sync"
   },
   "author": "Ashley St Pier",
   "license": "ISC",
