@@ -31,7 +31,7 @@ gulp.task('server', function(done) {
   connect.server({
     livereload: true,
     root: [__dirname],
-    port: process.env.PORT || 8080
+    port: process.env.PORT || 8900
   });
 });
 
