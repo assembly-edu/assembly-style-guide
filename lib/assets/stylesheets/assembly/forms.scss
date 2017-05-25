@@ -157,6 +157,16 @@ label > .label-body {
       vertical-align: middle;
     }
   }
+  &.checkbox {
+    position: relative;
+    .description {
+      padding-left: 25px;
+    }
+    input[type="checkbox"] {
+      margin-top: 5px;
+      position: absolute;
+    }
+  }
 }
 
 .input-with-inset {
@@ -199,10 +209,12 @@ label > .label-body {
 .error-text {
   color: $danger-color;
   margin: 0;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .form-error {
-
   input, select, textarea {
     border: 1px solid $danger-color !important;
     box-shadow: 0px 0px 6px lighten($danger-color, 15%) !important;
