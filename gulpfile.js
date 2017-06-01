@@ -49,6 +49,8 @@ gulp.task('watch', function() {
 
 gulp.task('default', ['sass', 'js', 'server', 'watch']);
 
+gulp.task('build', ['sass', 'js']);
+
 gulp.task('s3_sync', ['sass', 'js'], function() {
 
   var publisher = awspublish.create({
