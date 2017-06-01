@@ -1,6 +1,13 @@
+@media (max-width: 768px) {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
 // PANEL //
 
 .panel {
+  position: relative;
   background: #fff;
   border-radius: $global-radius;
   box-shadow: $light-shadow;
@@ -58,6 +65,7 @@
   padding: 14px 15px;
   display: inline-block;
   border-radius: $global-radius;
+  margin-bottom: 30px;
   color: #fff;
   position: relative;
   width: 100%;
@@ -326,10 +334,8 @@
       margin: 0;
       position: relative;
       &:hover > ul {
-        display:block
-      }
-      &:hover, &:focus, &:visited {
-        background: #f8f8f8;
+        text-decoration: underline;
+        display: block;
       }
     }
     ul {
@@ -345,9 +351,6 @@
       li {
         display: block;
         width: 200px;
-        &:hover, &:focus, &:visited {
-          background: #eee;
-        }
       }
       ul {
         top: 0;
@@ -361,25 +364,44 @@
       display: block;
       line-height: 60px;
       color: $font-color;
-      &:hover, &:focus, &:visited {
-        text-decoration: none;
-      }
     }
     i {
       margin: 0 5px;
       font-size: em(14);
     }
-    .dropdown i {
-      margin: 0 0 0 10px;
-      font-size: em(14);
+    .dropdown {
+      a {
+        &:hover, &:focus, &:visited { 
+          text-decoration: none;
+        }   
+      }
+      .icon {
+        display: inline-block;
+        margin: 0 0 0 5px;
+        font-size: em(14);
+        i {
+          margin: 0;
+        }
+      }
+    }
+    .apps-menu {
+      margin: 0 5px;
+      li {
+        @media (min-width: 768px) { 
+          &:hover, &:focus, &:visited { 
+            background: #eee;
+          }
+        }
+      }
     }
   }
   .navbar-brand {
     float: left;
-    line-height: 60px;
+    line-height: 55px;
     padding: 0 25px;
     height: 100%;
     font-size: em(16);
+    border-right: 1px solid #eee;
     img {
       height: 40px;
       width: auto;
@@ -407,7 +429,6 @@
     width: 100%;
     border-radius: 0;
     z-index: 9999;
-    box-shadow: $medium-shadow;
   }
 }
 
@@ -536,4 +557,14 @@
   }
 }
 
-
+.txt {
+  &.safe {
+    color: $success-color;
+  }
+  &.warn {
+    color: $warning-color;
+  }
+  &.danger {
+    color: $danger-color;
+  }
+}
