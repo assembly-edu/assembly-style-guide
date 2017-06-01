@@ -1,0 +1,22 @@
+.cards-table {
+  .cards {
+    display: block;
+    @media (min-width: 720px) {
+      display: none;
+    }
+    .panel {
+      height: 150px;
+    }
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .table {
+    display: none;
+    @media (min-width: 720px) {
+      display: table;
+    }
+  }
+}

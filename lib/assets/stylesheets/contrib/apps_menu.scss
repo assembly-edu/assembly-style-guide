@@ -1,0 +1,13 @@
+.admin-nav-desktop {
+  display: inline;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.admin-nav-mobile {
+  display: inline;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
