@@ -1,13 +1,13 @@
 .admin-nav-desktop {
-  display: inline;
+  display: inline !important;
   @media (max-width: 992px) {
-    display: none;
+    display: none !important;
   }
 }
 
 .admin-nav-mobile {
-  display: inline;
+  display: inline !important;
   @media (min-width: 992px) {
-    display: none;
+    display: none !important;
   }
 }
