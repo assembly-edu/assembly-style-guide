@@ -1,0 +1,24 @@
+#site-footer {
+  color: $grey;
+  a {
+    color: inherit;
+  }
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  p {
+    float: right;
+  }
+  .fa-heart-o {
+    color: $secondary-color;
+  }
+  .help {
+    color: $secondary-color;
+  }
+}

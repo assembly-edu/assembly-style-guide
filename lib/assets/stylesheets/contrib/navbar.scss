@@ -1,0 +1,22 @@
+#page {
+  padding: 100px 0 0;
+}
+
+.navbar-container {
+  margin: 0px auto;
+  
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 980px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }  
+}
+
+ul.navbar-right > li.dropdown > ul {
+  right: 0;
+  left: initial;
+}

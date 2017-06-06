@@ -36,8 +36,23 @@ input[type="button"] {
     padding: 12px 30px;
     font-size: em(18);
   }
+  &.btn-square {
+    padding: 5px 4px;
+  }
+  &.btn-header {
+    margin-top: 20px;
+    @media (min-width: 720px) {
+      float: right;
+      margin-top: -31px;
+    }
+  }
   i {
     padding-right: 3px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 15px 20px;
+    width: 100%;
   }
 }
 

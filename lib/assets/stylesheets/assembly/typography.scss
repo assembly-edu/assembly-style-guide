@@ -11,6 +11,7 @@ h4 { font-size: em(18); line-height: em(18); }
 h5 { font-size: em(16); line-height: em(18); }
 
 .header {
+  position: relative;
   padding-bottom: 1em;
   margin-bottom: 2em;
   border-bottom: 1px solid $light-grey;
@@ -157,4 +158,8 @@ p,
 ul,
 ol {
   margin-bottom: em(25);
+}
+
+.center {
+  text-align: center;
 }

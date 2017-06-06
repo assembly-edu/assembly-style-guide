@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
 @import "assembly/normalize";
 @import "assembly/variables";
@@ -10,6 +10,14 @@
 @import "assembly/buttons";
 @import "assembly/components";
 
+@import "contrib/footer";
+@import "contrib/cards-table";
+@import "contrib/modal";
+@import "contrib/apps_menu";
+@import "contrib/brand";
+@import "contrib/navbar";
+@import "contrib/tabs";
+@import "contrib/resource";
 
 html {
   font-size: 14px;
