@@ -48,6 +48,15 @@
   }
   .panel-content {
     padding: 15px;
+
+    .seperator {
+      margin-bottom: 1.0em;
+      border-bottom: 1px solid $light-grey;
+    }
+
+    .panel-group {
+      margin-bottom: 10px;
+    }
   }
   .panel-footer {
     @include clearfix();
