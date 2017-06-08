@@ -36,10 +36,10 @@ blockquote {
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 a {
-  color: $secondary-color;
+  color: $tertiary-color;
   text-decoration: none;
   &:hover {
-    color: darken($secondary-color, 5%);
+    color: darken($tertiary-color, 5%);
     text-decoration: underline;
   }
   &:focus {
