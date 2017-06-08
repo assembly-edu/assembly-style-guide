@@ -7,6 +7,10 @@ $secondary-color: #FF6B6B !default;
 $secondary-color-light: lighten($secondary-color, 15%) !default;
 $secondary-color-dark: desaturate(darken($secondary-color, 5%), 20%) !default;
 
+$tertiary-color: #4e6daf !default;
+$tertiary-color-light: lighten($tertiary-color, 15%) !default;
+$tertiary-color-dark: desaturate(darken($tertiary-color, 5%), 20%) !default;
+
 $bg-color: #f8f8f8 !default;
 $light-grey: darken($bg-color, 8%) !default;
 $grey: darken($bg-color, 30%) !default;
@@ -17,7 +21,7 @@ $font-color: #555 !default;
 
 $warning-color: #FB9017 !default;
 $danger-color: #F74427 !default;
-$success-color: #86D68C !default;
+$success-color: #44AE56 !default;
 
 $sans: 'Noto Sans', sans-serif;
 $serif: 'Noto Serif', serif;
