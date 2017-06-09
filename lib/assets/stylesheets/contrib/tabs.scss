@@ -19,15 +19,16 @@
       font-size: 16px;
       margin: 0;
       display: inline-block;
-      color: #555;
+      color: #777;
       padding: 10px 30px;
       cursor: pointer;
 
       &:hover {
-        color: $primary-color;
+        color: #555;
       }
 
       &.tab-selected {
+        color: #555;
         border-bottom: 2px solid $primary-color;
       }
     }

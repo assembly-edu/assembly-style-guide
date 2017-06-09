@@ -5,6 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "gulp watch",
+    "build": "gulp build",
     "start": "gulp server",
     "release": "gulp s3_sync"
   },

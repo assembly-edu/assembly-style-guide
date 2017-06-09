@@ -1,0 +1,7 @@
+a.dark {
+  color: $font-color;
+  &:hover {
+    color: $tertiary-color;
+    text-decoration: none;
+  }
+}

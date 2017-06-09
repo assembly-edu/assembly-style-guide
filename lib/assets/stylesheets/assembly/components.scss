@@ -10,7 +10,8 @@
   position: relative;
   background: #fff;
   border-radius: $global-radius;
-  box-shadow: $light-shadow;
+  border: 1px solid #e8e8e8;
+  box-shadow: $super-light-shadow;
   margin-bottom: 30px;
   overflow: hidden;
   &.center {
@@ -20,10 +21,18 @@
   .panel-header {
     padding: 10px 15px;
     border-bottom: 1px solid #f3f3f3;
+    background-color: #fdfdfd;
     font-size: em(16);
     line-height: em(18);
     h1, h2, h3, h4, p {
       margin: 0;
+    }
+    a {
+      color: #555;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $tertiary-color-dark;
     }
     &.grey {
       background: $slate-grey;
@@ -48,12 +57,10 @@
   }
   .panel-content {
     padding: 15px;
-
     .seperator {
       margin-bottom: 1.0em;
       border-bottom: 1px solid $light-grey;
     }
-
     .panel-group {
       margin-bottom: 10px;
     }
