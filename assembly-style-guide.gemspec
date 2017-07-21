@@ -4,9 +4,9 @@ Gem::Specification.new do |s|
   s.name        = "assembly-style-guide"
   s.version     = '0.0.1'
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Neon Adventures"]
-  s.email       = ["developers@neonadventures.com"]
-  s.homepage    = "http://github.com/neonadventures/assembly-style-guide"
+  s.authors     = ["Assembly"]
+  s.email       = ["developers@assembly.education"]
+  s.homepage    = "http://github.com/assembly-edu/assembly-style-guide"
   s.summary     = "Unified styles for the Assembly platform"
   s.description = "This gem provides CSS and JS for Rails 4+ applications."
   s.license     = "Private"

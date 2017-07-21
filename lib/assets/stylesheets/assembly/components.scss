@@ -317,100 +317,7 @@
   background: #fff;
   height: 60px;
   box-shadow: $light-shadow;
-  border-radius: $global-radius;
-  &.navbar-dark {
-    background: #556270;
-    color: #fff;
-    a {
-      color: #fff;
-    }
-    li {
-      &:hover, &:focus, &:visited {
-        background: darken(#556270, 5%);
-      }
-      ul {
-        background: darken(#556270, 5%);
-        li {
-          &:hover, &:focus, &:visited {
-            background: darken(#556270, 8%);
-          }
-        }
-      }
-    }
-  }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-size: 0;
-    li {
-      float: left;
-      font-size: 14px;
-      margin: 0;
-      position: relative;
-      &:hover > ul {
-        text-decoration: underline;
-        display: block;
-      }
-    }
-    ul {
-      display: none;
-      position: absolute;
-      z-index: 9999;
-      top: 100%;
-      left: 0;
-      background: #f8f8f8;
-      padding: 0;
-      margin: 0;
-      box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
-      li {
-        display: block;
-        width: 200px;
-      }
-      ul {
-        top: 0;
-        left: 100%
-      }
-    }
-
-    a {
-      height: 60px;
-      padding: 0 25px;
-      display: block;
-      line-height: 60px;
-      color: $font-color;
-    }
-    i {
-      margin: 0 5px;
-      font-size: em(14);
-    }
-    .dropdown {
-      a {
-        &:hover, &:focus, &:visited { 
-          text-decoration: none;
-        }   
-      }
-      .icon {
-        display: inline-block;
-        margin: 0 0 0 5px;
-        font-size: em(14);
-        i {
-          margin: 0;
-        }
-      }
-    }
-    .apps-menu {
-      margin: 0 5px;
-      li {
-        @media (min-width: 768px) { 
-          &:hover, &:focus, &:visited { 
-            background: #eee;
-          }
-        }
-      }
-    }
-  }
   .navbar-brand {
     float: left;
     line-height: 55px;
@@ -420,15 +327,10 @@
     border-right: 1px solid #eee;
     img {
       height: 40px;
-      width: auto;
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  .input-group {
-    margin: 0 10px;
-    input, select, textarea {
-      margin: 11px 0;
+      margin-top: -4px;
+    } 
+    a {
+      padding: 0;
     }
   }
   .navbar-right {
@@ -445,6 +347,75 @@
     width: 100%;
     border-radius: 0;
     z-index: 9999;
+  }
+
+  a {
+    height: 60px;
+    padding: 0 25px;
+    display: block;
+    line-height: 60px;
+    color: $font-color;
+  }
+  i {
+    margin: 0 5px;
+    font-size: em(14);
+  }
+
+  .navbar-container {
+    &>ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      font-size: 0;
+      &>li {
+        a {
+          &:hover, &:focus, &:visited { 
+            text-decoration: none;
+          }   
+        }
+        &>a {
+          &:hover {
+            @media (min-width: 992px) {
+              background-color: #f8f8f8;
+            }
+            transition: background-color 0.2s;
+          }
+        }
+        float: left;
+        font-size: 14px;
+        margin: 0;
+        position: relative;
+        &:hover > ul {
+          display: block;
+        }
+        border-left: 1px solid #eee;
+        &>ul {
+          display: none;
+          position: absolute;
+          z-index: 9999;
+          top: 100%;
+          left: 0;
+          background: #f8f8f8;
+          padding: 0;
+          margin: 0 -59px 0 0;
+          box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+          li {
+            display: block;
+            width: 200px;
+            margin: 0;
+            font-size: 1.1em;
+            border-bottom: 1px solid #e4e4e4;
+            &:hover {
+              background: #eee;
+            }
+          }
+          ul {
+            top: 0;
+            left: 100%
+          }
+        }
+      }
+    }
   }
 }
 
