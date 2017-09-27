@@ -268,7 +268,6 @@
           border-bottom: 2px solid $primary-color;
           z-index: 100;
           a {
-            color: $primary-color;
             text-decoration: none;
           }
         }
@@ -423,6 +422,13 @@
 
 .sub-nav {
   margin: 0 0 20px 0;
+
+  h4 {
+    margin-left: 5px;
+    font-size: 0.929em;
+    color: #777;
+    text-transform: uppercase;
+  }
 
   ul {
     margin: 0;
