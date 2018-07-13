@@ -56,7 +56,7 @@ gulp.task('s3_sync', ['sass', 'js'], function() {
   var publisher = awspublish.create({
     region: 'eu-west-1',
     params: {
-      Bucket: 'styles.assembly.education'
+      Bucket: 'assembly-production-style-guide'
     }
   });
 
