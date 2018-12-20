@@ -1,0 +1,7 @@
+$warning-color-light: lighten($warning-color, 30%);
+$danger-color-light: lighten($danger-color, 30%);
+$success-color-light: lighten($success-color, 30%);
+
+.bg-warning-light { background: $warning-color-light; }
+.bg-danger-light { background: $danger-color-light; }
+.bg-success-light { background: $success-color-light; }
