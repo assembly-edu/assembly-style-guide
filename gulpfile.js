@@ -3,7 +3,7 @@
 var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var concat      = require('gulp-concat');
-var minifyCSS   = require('gulp-minify-css');
+var cleanCSS    = require('gulp-clean-css');
 var connect     = require('gulp-connect');
 var watch       = require('gulp-watch');
 var uglify      = require('gulp-uglify');
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
   gulp.src('./lib/assets/stylesheets/assembly.scss')
     .pipe(sass({ style: 'compressed' }).on('error', sass.logError))
     .pipe(concat('assembly.min.css'))
-    .pipe(minifyCSS({compatibility: 'ie8'}))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./dist/css'))
     .pipe(connect.reload());
 });
