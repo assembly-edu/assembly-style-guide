@@ -1,17 +1,12 @@
-Assembly Style Guide
-====================
+# Assembly Style Guide
 
 Generic styles for use in Project Assembly apps.
 
+## Hosted Assets
 
-Hosted Assets
--------------
+A demo and hosted versions of the compiled assets are available at https://styles.assembly.education/
 
-A demo and hosted versions of the compiled assets are available at http://assembly-style-guide.s3-website-eu-west-1.amazonaws.com
-
-
-Usage in Ruby on Rails Projects
--------------------------------
+## Usage in Ruby on Rails Projects
 
 The Guide comes packaged as a rubygem, include it in your Gemfile with...
 
